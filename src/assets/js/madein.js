@@ -4,11 +4,13 @@
     (function ($) {
         $(document).ready(function () {
 
-            console.log('Start');
+            $( 'main a[href^="http://"]' ).attr( 'target','_blank' );
+            $( 'main a[href^="https://"]' ).attr( 'target','_blank' );
 
             // ========== Plugins initialization ==========
             $('.button-collapse').sideNav();
             $('.parallax').parallax();
+            
 
             // ========== Card functions ==========
             $('.madein-card-activator').mouseenter(
