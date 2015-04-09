@@ -1,0 +1,180 @@
+
+// General
+body {
+  background-color: color("grey", "lighten-4");
+}
+
+// Header & Nabigation
+.madein-nav {
+  margin-bottom: 64px;
+  background-color: #fff;
+
+  .madein-brand-logo {
+    padding: 0 15px;
+    background-color: color(amber, darken-1);
+    color: color("grey", "darken-4");
+    font-size: 16px;
+    font-weight: 500;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  a {
+    color: color("blue-grey", "darken-4");
+    font-size: 14px;
+  }
+
+}
+
+// About Me Section
+.madein-about {
+  margin-bottom: 40px;
+
+  .madein-about-text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+}
+
+.madein-about-card {
+  .card-content {
+
+    .card-title {
+      line-height: 0;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 6px;
+      line-height: 1.8;
+
+      a {
+        color: color("blue", "darken-1");
+
+        .madein-icon {
+          color: color("blue", "darken-4");
+          font-size: 18px;
+          display: inline-block;
+          position: relative;
+          top: 4px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+// Post 
+.madein-post-container {
+
+  h1.card-title {
+    font-size: 32px;
+    margin-top: 0;
+
+    .madein-tags {
+
+      a {
+        font-weight: 500;
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-left: 10px;
+        color: color("grey", "darken-4");
+        background-color: color("amber", "darken-2");
+        border-radius: 100px;
+      }
+    }
+  }
+
+  h1,h2,h3 {
+    font-weight: 300;
+    color: color("grey", "darken-3");
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+
+  .parallax-container {
+    height: 360px;
+    
+    img {
+      max-width: 120%!important;
+    }
+
+    @media #{$medium-and-down} {
+      height: 300px;
+    }
+    @media #{$small-and-down} {
+      height: 240px;
+    }
+
+  }
+
+  .card {
+    position: relative;
+    top: -8px;
+  }
+  
+  @media #{$small-and-down} {
+    width: 95%!important;
+    padding: 0!important;
+  }
+
+}
+
+// Portfolio cards
+.madein-card {
+  cursor: pointer;
+
+  .card-content{
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+}
+
+// Portfolio Pagination 
+.madein-pagination {
+  margin: 20px 0;
+
+  .current {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 20px;
+  }
+}
+
+// Footer
+.madein-footer {
+  margin-top: 64px!important;
+
+  li {
+    line-height: 2;
+
+    .madein-icon {
+      font-size: 18px;
+      display: inline-block;
+      position: relative;
+      top: 4px;
+      padding-right: 4px;
+    }
+  }
+}

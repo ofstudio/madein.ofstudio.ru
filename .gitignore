@@ -1,0 +1,15 @@
+node_modules
+.tmp
+src/assets/bower_components
+.sass-cache
+.idea
+.deploy-access
+npm-debug.log
+
+# Content folder structure
+content/*/*
+!content/apps/README.MD
+!content/data/README.MD
+!content/images/README.MD
+# Rename your_theme to your theme name
+!content/themes/madein.ofstudio.theme

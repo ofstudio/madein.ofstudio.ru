@@ -1,0 +1,8 @@
+[{
+  "name": "madein",
+  "script": "index.js",
+  "watch": ["content/themes"],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}]

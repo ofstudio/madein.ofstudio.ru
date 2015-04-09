@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ghost_head}}
+    <!-- build:css assets/css/madein.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="assets/css/madein.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+{{>navigation}}
+{{{body}}}
+{{>footer}}
+<!-- build:js assets/js/libraries.min.js -->
+<!-- bower:js -->
+<script src="assets/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js assets/js/madein.min.js -->
+<script src="assets/bower_components/materialize/bin/materialize.js"></script>
+<script src="assets/js/madein.js"></script>
+<!-- endbuild -->
+{{> analytics}}
+
+</body>
+</html>

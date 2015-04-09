@@ -1,0 +1,6 @@
+{
+  "name": "madein.ofstudio.ru",
+  "dependencies": {
+    "materialize": "~0.96.1"
+  }
+}

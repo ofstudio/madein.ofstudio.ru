@@ -1,0 +1,4 @@
+#!/bin/sh
+USER=username
+HOST=hostname
+DIST=/srv/www/domains/madein.ofstudio.ru
