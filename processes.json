@@ -1,7 +1,8 @@
 [{
   "name": "madein",
+  "cwd": "/srv/www/domains/madein.ofstudio.ru",
   "script": "index.js",
-  "watch": ["content/themes"],
+  "watch": ["/srv/www/domains/madein.ofstudio.ru/content/themes"],
   "env": {
     "NODE_ENV": "production"
   }
