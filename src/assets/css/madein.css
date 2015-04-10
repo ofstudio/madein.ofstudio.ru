@@ -7992,6 +7992,10 @@ body {
 .madein-nav {
   margin-bottom: 64px;
   background-color: #fff; }
+  @media only screen and (max-width : 600px) {
+    .madein-nav .container.nav-wrapper {
+      padding: 0 1.5rem 0 0;
+      width: 100%; } }
   .madein-nav .madein-brand-logo {
     padding: 0 15px;
     background-color: #ffb300;

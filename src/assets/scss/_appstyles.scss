@@ -8,6 +8,13 @@ body {
 .madein-nav {
   margin-bottom: 64px;
   background-color: #fff;
+  
+  .container.nav-wrapper {
+    @media #{$small-and-down} {
+      padding: 0 $gutter-width 0 0;
+      width: 100%;
+    }
+  }
 
   .madein-brand-logo {
     padding: 0 15px;
