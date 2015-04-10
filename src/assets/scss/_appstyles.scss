@@ -22,7 +22,7 @@ body {
 
   .madein-brand-logo {
     padding: 0 15px;
-    background-color: color(amber, darken-1);
+    background-color: color("amber", "darken-1");
     color: color("grey", "darken-4");
     font-size: 16px;
     font-weight: 500;
@@ -37,10 +37,10 @@ body {
     color: color("blue-grey", "darken-4");
     font-size: 14px;
   }
-
 }
 
-// About Me Section
+
+// ================== About Me Section ==================
 .madein-about {
   margin-bottom: 40px;
 
@@ -79,74 +79,77 @@ body {
 }
 
 
-// Post 
-.madein-post-container {
+// ================== Post ==================
+.post-container {
+  padding: 0;
 
-  h1.card-title {
-    font-size: 32px;
-    margin-top: 0;
-
-    .madein-tags {
-
-      a {
-        font-weight: 500;
-        font-size: 12px;
-        padding: 5px 10px;
-        margin-left: 10px;
-        color: color("grey", "darken-4");
-        background-color: color("amber", "darken-2");
-        border-radius: 100px;
-      }
-    }
+  @media #{$small-and-down} {
+    width: 95%!important;
+    padding: 0!important;
   }
-
-  h1,h2,h3 {
-    font-weight: 300;
-    color: color("grey", "darken-3");
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 16px;
-  }
-
 
   .parallax-container {
     height: 360px;
-    
     img {
       max-width: 120%!important;
     }
-
     @media #{$medium-and-down} {
       height: 300px;
     }
     @media #{$small-and-down} {
       height: 240px;
     }
-
   }
 
-  .card {
-    position: relative;
-    top: -8px;
+  article {
+    background-color: #fff;
+    padding: 20px $gutter-width 30px;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    h1,h2,h3 {
+      font-weight: 300;
+      color: color("grey", "darken-3");
+    }
+    
+    h1 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+    
+    .post-tags {
+      a {
+        font-weight: 500;
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-left: 10px;
+        color: color("grey", "darken-4");
+        background-color: color("amber", "darken-1");
+        border-radius: 100px;
+      }
+    }
+
   }
   
-  @media #{$small-and-down} {
-    width: 95%!important;
-    padding: 0!important;
-  }
-
 }
 
-// Portfolio cards
+
+// ================== Portfolio cards ==================
 .madein-card {
   cursor: pointer;
 
@@ -162,7 +165,8 @@ body {
 
 }
 
-// Portfolio Pagination 
+
+// ================== Portfolio Pagination ==================
 .madein-pagination {
   margin: 20px 0;
 
@@ -173,7 +177,7 @@ body {
   }
 }
 
-// Footer
+// ================== Footer ==================
 .madein-footer {
   margin-top: 64px!important;
 
