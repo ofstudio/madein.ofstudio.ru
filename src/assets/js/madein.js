@@ -4,21 +4,21 @@
     (function ($) {
         $(document).ready(function () {
 
-            $( 'main a[href^="http://"]' ).attr( 'target','_blank' );
-            $( 'main a[href^="https://"]' ).attr( 'target','_blank' );
+            $('main a[href^="http://"]').attr('target', '_blank');
+            $('main a[href^="https://"]').attr('target', '_blank');
 
             // ========== Plugins initialization ==========
             $('.button-collapse').sideNav();
             $('.parallax').parallax();
-            
+
 
             // ========== Card functions ==========
-            $('.madein-card').on('click touchend tap', function () {
+            $('.madein-card').on('click', function () {
                 window.location.href = $(this).find('.madein-card-href').attr('href');
-            }); 
+            });
 
-            $('.madein-card-activator').mouseenter(
-                function () {
+            $('.madein-card-activator').on('mouseover', function () {
+                if (!Modernizr.touch) {
                     $(this.parentNode.parentNode).find('.card-reveal')
                         .css({display: 'block'})
                         .velocity('stop', true)
@@ -27,7 +27,8 @@
                             queue: false,
                             easing: 'easeInOutQuad'
                         });
-                });
+                }
+            });
 
             $('.madein-card').mouseleave(function () {
                 $(this).find('.card-reveal')
@@ -41,7 +42,7 @@
                     }
                 );
             });
-            
+
         });
     })(jQuery);
 
