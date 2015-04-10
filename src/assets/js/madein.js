@@ -1,4 +1,5 @@
 'use strict';
+
 (function (document, window, undefined) {
 
     (function ($) {
@@ -10,6 +11,15 @@
             // ========== Plugins initialization ==========
             $('.button-collapse').sideNav();
             $('.parallax').parallax();
+            
+            
+            // ========== materilbox-fullscreen init ==========
+            //
+            // Markdown syntax:
+            // __![image title](image/url)__
+            //
+            $('.post-container strong>img').addClass('materialbox-fullscreen').addClass('responsive-img');
+            $('.materialbox-fullscreen').materialbox_fullscreen();
 
 
             // ========== Card functions ==========

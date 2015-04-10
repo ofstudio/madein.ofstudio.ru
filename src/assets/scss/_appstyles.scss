@@ -1,12 +1,16 @@
-
-// General
+// ================== General ==================
 body {
   background-color: color("grey", "lighten-4");
 }
 
-// Header & Nabigation
+#materialbox-overlay {
+  background-color: rgba(255, 255, 255, .75);
+}
+
+
+// ================== Header & Nabigation ==================
 .madein-nav {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   background-color: #fff;
   
   .container.nav-wrapper {
