@@ -1,6 +1,7 @@
 {
   "name": "madein.ofstudio.ru",
   "dependencies": {
-    "materialize": "~0.96.1"
+    "materialize": "~0.96.1",
+    "fastclick": "~1.0.6"
   }
 }
