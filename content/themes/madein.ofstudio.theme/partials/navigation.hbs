@@ -1,20 +1,22 @@
-<nav class="madein-nav">
-    <div class="container nav-wrapper">
-        <a href="/" class="madein-brand-logo left">
-            Олег Фомин
-            <span class="hide-on-med-and-down">/ Портфолио</span>
-        </a>
-        <ul class="hide-on-small-and-down right">
-            {{#foreach @blog.navigation}}
-                <li><a href="{{this.url}}">{{label}}</a></li>
-            {{/foreach}}
-        </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up right"><i
-                class="mdi-navigation-menu"></i></a>
-    </div>
-    <ul id="slide-out" class="side-nav">
-        {{#foreach @blog.navigation}}
-            <li><a href="{{this.url}}">{{label}}</a></li>
-        {{/foreach}}
-    </ul>
-</nav>
+<div class="navbar-fixed">
+    <nav class="madein-nav z-depth-1">
+        <div class="container nav-wrapper">
+            <a href="/" class="madein-brand-logo left">
+                Олег Фомин
+                <span>/ Портфолио</span>
+            </a>
+            <ul class="hide-on-small-and-down right">
+                {{#foreach @blog.navigation}}
+                    <li><a href="{{this.url}}">{{label}}</a></li>
+                {{/foreach}}
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up right"><i
+                    class="mdi-navigation-menu"></i></a>
+            <ul id="slide-out" class="side-nav">
+                {{#foreach @blog.navigation}}
+                    <li><a href="{{this.url}}">{{label}}</a></li>
+                {{/foreach}}
+            </ul>
+        </div>
+    </nav>
+</div>
