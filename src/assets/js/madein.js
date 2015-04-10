@@ -13,6 +13,10 @@
             
 
             // ========== Card functions ==========
+            $('.madein-card').on('click touchend tap', function () {
+                window.location.href = $(this).find('.madein-card-href').attr('href');
+            }); 
+
             $('.madein-card-activator').mouseenter(
                 function () {
                     $(this.parentNode.parentNode).find('.card-reveal')
@@ -37,11 +41,7 @@
                     }
                 );
             });
-
-            $('.madein-card').click(function () {
-                window.location.href = $(this).find('.madein-card-href').attr('href');
-            });
-
+            
         });
     })(jQuery);
 
