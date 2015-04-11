@@ -3,16 +3,38 @@
 (function (document, window, undefined) {
 
     (function ($) {
-        $(document).ready(function () {
 
+        $(document).ready(function () {
+            
+            // ========== Sticky footer feature ==========
+            $(window).resize(function (sel1, sel2) {
+                var spacer = $(sel1),
+                    footer = $(sel2);
+                return function () {
+                    var diff = $(window).height() - footer.position().top + spacer.height() - footer.outerHeight(true);
+                    if (diff > 0) {
+                        spacer.css('height', diff + 'px');
+                    }
+                    else {
+                        spacer.css('height', 0);
+                    }
+                };
+            }('#footer-spacer', '#footer'));
+
+            
+            // ========== Open external links in new window ==========
             $('main a[href^="http://"]').attr('target', '_blank');
             $('main a[href^="https://"]').attr('target', '_blank');
+            
 
             // ========== Plugins initialization ==========
-            $('.button-collapse').sideNav();
+            $('.button-collapse').sideNav({
+                edge: 'right',
+                menuWidth: 200
+            });
             $('.parallax').parallax();
-            
-            
+
+
             // ========== materilbox-fullscreen init ==========
             //
             // Markdown syntax:
@@ -54,6 +76,14 @@
             });
 
         });
+
+        
+        // ========== Sticky footer initialization ==========
+        window.onload = function () {
+            $(window).resize();
+        };
+
     })(jQuery);
+
 
 })(document, window);

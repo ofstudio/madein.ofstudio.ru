@@ -1,4 +1,5 @@
 // ================== General ==================
+
 body {
   background-color: color("grey", "lighten-4");
 }
@@ -7,8 +8,7 @@ body {
   background-color: rgba(255, 255, 255, .75);
 }
 
-
-// ================== Header & Nabigation ==================
+// ================== Header & Navigation ==================
 .madein-nav {
   //margin-bottom: 32px;
   background-color: rgba(255, 255, 255, .92);
@@ -83,7 +83,7 @@ body {
 .post-container {
   padding: 0;
 
-  @media #{$small-and-down} {
+  @media #{$medium-and-down} {
     width: 100%!important;
     padding: 0!important;
   }
@@ -178,10 +178,24 @@ body {
 }
 
 // ================== Footer ==================
-.madein-footer {
-  margin-top: 64px!important;
-  @media #{$small-and-down} {
-    margin-top: 0!important;
+#footer-spacer { // Sticky footer feature
+  height: 0;
+  transition: height 1.2s ease;
+  -webkit-transition: height 1.2s ease;
+  -moz-transition: height 1.2s ease;
+  -o-transition: height 1.2s ease;
+}
+
+#page-bottom-margin { // Bottom margin for index pages on tablet and smaller
+  @media #{$medium-and-down} {
+    margin-top: 48px;
+  }
+}
+
+#footer {
+  margin-top: 64px;
+  @media #{$medium-and-down} {
+    margin-top: 0; // #page-bottom-margin used instead on index pages
   }
 
   li {
@@ -194,5 +208,26 @@ body {
       top: 4px;
       padding-right: 4px;
     }
+  }
+}
+
+
+// ================== Medium-narrow media query ==================
+// Used for top nav / side nav switching
+$med-narrow-screen-up: 701px !default;
+$med-narrow-screen-down: 700px !default;
+
+$med-narrow-and-up: "only screen and (min-width : #{$med-narrow-screen-up})" !default;
+$med-narrow-and-down: "only screen and (max-width : #{$med-narrow-screen-down})" !default;
+
+.hide-on-med-narrow-and-down {
+  @media #{$med-narrow-and-down} {
+    display: none !important;
+  }
+}
+
+.hide-on-med-narrow-and-up {
+  @media #{$med-narrow-and-up} {
+    display: none !important;
   }
 }

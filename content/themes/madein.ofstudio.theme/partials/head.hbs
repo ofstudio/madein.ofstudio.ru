@@ -9,10 +9,10 @@
 <meta itemprop="name" content="{{@blog.title}}"/>
 {{/is}}
 {{#is "tag"}}
-<title>Работы с тегом «{{tag.name}}» — {{@blog.title}}</title>
+<title>{{tag.name}} — {{@blog.title}}</title>
 <meta name="description" content="{{@blog.description}}"/>
-<meta property="og:title" content="Работы с тегом «{{tag.name}}» — {{@blog.title}}"/>
-<meta itemprop="name" content="Работы с тегом «{{tag.name}}» — {{@blog.title}}"/>
+<meta property="og:title" content="{{tag.name}} — {{@blog.title}}"/>
+<meta itemprop="name" content="{{tag.name}} — {{@blog.title}}"/>
 {{/is}}
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="{{@blog.title}}"/>

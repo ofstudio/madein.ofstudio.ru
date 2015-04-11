@@ -5,16 +5,16 @@
                 Олег Фомин
                 <span>/ Портфолио</span>
             </a>
-            <ul class="hide-on-small-and-down right">
-                {{#foreach @blog.navigation}}
-                    <li><a href="{{this.url}}">{{label}}</a></li>
+            <ul class="hide-on-med-narrow-and-down right">
+                {{#foreach navigation}}
+                    <li><a href="{{url}}">{{label}}</a></li>
                 {{/foreach}}
             </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up right"><i
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-narrow-and-up right"><i
                     class="mdi-navigation-menu"></i></a>
             <ul id="slide-out" class="side-nav">
-                {{#foreach @blog.navigation}}
-                    <li><a href="{{this.url}}">{{label}}</a></li>
+                {{#foreach navigation}}
+                    <li><a href="{{url}}">{{label}}</a></li>
                 {{/foreach}}
             </ul>
         </div>

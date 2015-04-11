@@ -1,8 +1,8 @@
-{{#ifCond pagination.next "||" pagination.prev}}
+{{#ifCond next "||" prev}}
     <div class="madein-pagination center">
         <span>
-            {{#if pagination.prev}}
-                <a href="{{page_url pagination.prev}}#portfolio"
+            {{#if prev}}
+                <a href="{{page_url prev}}#portfolio"
                    class="btn-flat btn-floating btn-large waves-effect waves-circle waves-light amber darken-1">
                     <i class="mdi-navigation-chevron-left "></i>
                 </a>
@@ -13,10 +13,10 @@
                 </a>
             {{/if}}
         </span>
-        <span class="current">{{pagination.page}} / {{pagination.pages}}</span>
+        <span class="current">{{page}} / {{pages}}</span>
         <span>
-            {{#if pagination.next}}
-                <a href="{{page_url pagination.next}}#portfolio"
+            {{#if next}}
+                <a href="{{page_url next}}#portfolio"
                    class="btn-flat btn-floating btn-large waves-effect waves-circle waves-light amber darken-1">
                     <i class="mdi-navigation-chevron-right grey-text text-darken-3"></i>
                 </a>

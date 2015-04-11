@@ -2,9 +2,11 @@
 {{#post}}
     <main id="content" class="content" role="main">
         <div class="container post-container z-depth-1">
-            <div class="parallax-container">
-                <div class="parallax"><img src="{{image}}"></div>
-            </div>
+            {{#if image}}
+                <div class="parallax-container">
+                    <div class="parallax"><img src="{{image}}"></div>
+                </div>
+            {{/if}}
             <article class="{{post_class}}">
                 <header class="post-header">
                     <h1 class="card-title">{{title}}</h1>
@@ -17,7 +19,8 @@
                         <a href="{{url}}" class="post-tag-{{slug}}">{{name}}</a>
                     {{/foreach}}
                 </section>
-        </article>
+                <div id="footer-spacer"></div>
+            </article>
         </div>
     </main>
 {{/post}}

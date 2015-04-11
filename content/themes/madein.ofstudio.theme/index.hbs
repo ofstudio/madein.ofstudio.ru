@@ -20,8 +20,11 @@
                 <p>{{{tag.description}}}</p>
             {{/if}}
         {{/is}}
-        {{#is "paged"}}{{>pagination}}{{/is}}
+        {{#is "paged"}}{{pagination}}{{/is}}
         {{>loop}}
-        {{>pagination}}
+        {{pagination}}
     </div>
 {{/is}}
+<div id="page-bottom-margin"></div>
+<div id="footer-spacer"></div>
+
