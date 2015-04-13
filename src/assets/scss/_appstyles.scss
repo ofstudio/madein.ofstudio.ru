@@ -213,6 +213,7 @@ body {
 
 #footer {
   margin-top: 64px;
+  box-shadow: none;
   @media #{$medium-and-down} {
     margin-top: 0; // #page-bottom-margin used instead on index pages
   }
