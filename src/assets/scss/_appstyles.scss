@@ -13,6 +13,11 @@ body {
   //margin-bottom: 32px;
   background-color: rgba(255, 255, 255, .92);
   
+  .home-nav-icon {
+    font-size: 22px;
+    color: color("grey", "darken-1");
+  }
+  
   .container.nav-wrapper {
     padding: 0 $gutter-width 0 0;
     @media #{$small-and-down} {
@@ -279,8 +284,8 @@ body {
 
 // ================== Medium-narrow media query ==================
 // Used for top nav / side nav switching
-$med-narrow-screen-up: 701px !default;
-$med-narrow-screen-down: 700px !default;
+$med-narrow-screen-up: 721px !default;
+$med-narrow-screen-down: 720px !default;
 
 $med-narrow-and-up: "only screen and (min-width : #{$med-narrow-screen-up})" !default;
 $med-narrow-and-down: "only screen and (max-width : #{$med-narrow-screen-down})" !default;

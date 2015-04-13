@@ -5820,6 +5820,9 @@ body {
 
 .madein-nav {
   background-color: rgba(255, 255, 255, 0.92); }
+  .madein-nav .home-nav-icon {
+    font-size: 22px;
+    color: #757575; }
   .madein-nav .container.nav-wrapper {
     padding: 0 1.5rem 0 0; }
     @media only screen and (max-width : 600px) {
@@ -5992,10 +5995,10 @@ body {
       top: 4px;
       padding-right: 4px; }
 
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width : 720px) {
   .hide-on-med-narrow-and-down {
     display: none !important; } }
 
-@media only screen and (min-width : 701px) {
+@media only screen and (min-width : 721px) {
   .hide-on-med-narrow-and-up {
     display: none !important; } }
