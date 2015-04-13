@@ -5995,10 +5995,10 @@ body {
       top: 4px;
       padding-right: 4px; }
 
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 740px) {
   .hide-on-med-narrow-and-down {
     display: none !important; } }
 
-@media only screen and (min-width : 721px) {
+@media only screen and (min-width : 741px) {
   .hide-on-med-narrow-and-up {
     display: none !important; } }

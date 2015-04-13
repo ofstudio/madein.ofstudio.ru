@@ -284,8 +284,8 @@ body {
 
 // ================== Medium-narrow media query ==================
 // Used for top nav / side nav switching
-$med-narrow-screen-up: 721px !default;
-$med-narrow-screen-down: 720px !default;
+$med-narrow-screen-up: 741px !default;
+$med-narrow-screen-down: 740px !default;
 
 $med-narrow-and-up: "only screen and (min-width : #{$med-narrow-screen-up})" !default;
 $med-narrow-and-down: "only screen and (max-width : #{$med-narrow-screen-down})" !default;
