@@ -5838,12 +5838,10 @@ body {
     color: #263238;
     font-size: 14px; }
 
-.madein-about {
-  margin: 30px auto 30px auto; }
-  .madein-about .madein-about-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.8; }
+.madein-about .madein-about-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8; }
 
 .madein-about-card .card-content .card-title {
   line-height: 0; }
@@ -5860,6 +5858,9 @@ body {
       position: relative;
       top: 4px;
       margin-right: 4px; }
+
+.index-section {
+  margin: 32px auto 32px auto; }
 
 .footnotes {
   display: none; }
@@ -5908,14 +5909,45 @@ body {
       font-size: 20px; }
     .post-container article h4 {
       font-size: 16px; }
-    .post-container article .post-tags a {
-      font-weight: 500;
-      font-size: 12px;
-      padding: 5px 10px;
-      margin-left: 10px;
-      color: #212121;
-      background-color: #ffb300;
-      border-radius: 100px; }
+
+.post-tags {
+  margin: 32px 0 8px; }
+  .post-tags a {
+    display: inline-block;
+    padding: 5px 8px 5px;
+    position: relative;
+    font-size: 12px;
+    line-height: 10px;
+    margin: 0 0 5px 20px;
+    background-color: #ffd54f;
+    color: #424242; }
+    .post-tags a:hover {
+      background: #e0e0e0; }
+    .post-tags a:before {
+      border-image: none;
+      border-style: solid;
+      border-width: 10px 9px;
+      border-color: transparent #ffd54f transparent transparent;
+      content: "";
+      height: 1px;
+      left: -17px;
+      position: absolute;
+      top: 0;
+      width: 1px; }
+    .post-tags a:hover:before {
+      border-color: transparent #e0e0e0 transparent transparent; }
+    .post-tags a:after {
+      background: #fff;
+      content: "";
+      height: 4px;
+      left: -2px;
+      position: absolute;
+      top: 8px;
+      width: 4px;
+      z-index: 999;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px; }
 
 .madein-card {
   cursor: pointer; }

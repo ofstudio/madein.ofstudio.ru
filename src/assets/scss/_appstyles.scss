@@ -153,20 +153,60 @@ body {
       font-size: 16px;
     }
     
-    .post-tags {
-      a {
-        font-weight: 500;
-        font-size: 12px;
-        padding: 5px 10px;
-        margin-left: 10px;
-        color: color("grey", "darken-4");
-        background-color: color("amber", "darken-1");
-        border-radius: 100px;
-      }
-    }
-
   }
   
+}
+
+
+// ================== Post tags ==================
+.post-tags {
+  margin: 32px 0 8px;
+
+  a {
+    display: inline-block;
+    padding: 5px 8px 5px;
+    position: relative;
+    font-size: 12px;
+    line-height: 10px;
+    margin: 0 0 5px 20px;
+    background-color: color("amber", "lighten-2");
+    color: color("grey", "darken-3");
+
+    &:hover {
+      background: color("grey", "lighten-2");
+    }
+
+    &:before {
+      border-image: none;
+      border-style: solid;
+      border-width: 10px 9px;
+      border-color: transparent color("amber", "lighten-2") transparent transparent;
+      content: "";
+      height: 1px;
+      left: -17px;
+      position: absolute;
+      top: 0;
+      width: 1px;
+    }
+
+    &:hover:before {
+      border-color: transparent color("grey", "lighten-2") transparent transparent;
+    }
+
+    &:after {
+      background: #fff;
+      content: "";
+      height: 4px;
+      left: -2px;
+      position: absolute;
+      top: 8px;
+      width: 4px;
+      z-index: 999;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+  }
 }
 
 
