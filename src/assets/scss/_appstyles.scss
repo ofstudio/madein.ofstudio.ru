@@ -42,8 +42,6 @@ body {
 
 // ================== About Me Section ==================
 .madein-about {
-  margin: 30px auto 30px auto;
-
   .madein-about-text{
     font-size: 18px;
     font-weight: 400;
@@ -78,6 +76,10 @@ body {
   }
 }
 
+// ================== Index pages ==================
+.index-section{
+  margin: 32px auto 32px auto;
+}
 
 // ================== Post Assets (via Ghost footnotes feature)==================
 .footnotes {
