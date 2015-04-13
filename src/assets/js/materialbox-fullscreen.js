@@ -109,8 +109,6 @@
                 var heightPercent = originalHeight / windowHeight;
                 var newWidth = 0;
                 var newHeight = 0;
-                console.log('Works!');
-
 
                 if (widthPercent > heightPercent) {
                     ratio = originalHeight / originalWidth;
