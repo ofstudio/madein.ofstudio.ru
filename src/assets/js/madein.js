@@ -90,22 +90,20 @@
             });
             var assetsTemplate = JST['src/templates/post-assets.hbs'];
             $('#post-assets').html(assetsTemplate(assetsContext));
-        });
+
+
+            // ========== Open external links in new window ==========
+            $('main a[href^="http://"]').attr('target', '_blank');
+            $('main a[href^="https://"]').attr('target', '_blank');
+            
+        }); // $(document).ready
         
         
         // ========== Sticky footer initialization ==========
         window.onload = function () {
             $(window).resize();
         };
-
         
-        // ========== Open external links in new window ==========
-        $('main a[href^="http://"]').attr('target', '_blank');
-        $('main a[href^="https://"]').attr('target', '_blank');
-
-
-
     })(jQuery);
-
 
 })(document, window);
