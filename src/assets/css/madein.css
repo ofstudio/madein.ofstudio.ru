@@ -5866,7 +5866,7 @@ body {
   display: none; }
 
 #post-assets {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   font-size: 12px;
   color: #616161; }
   #post-assets i[class^="mdi-"] {
@@ -5916,8 +5916,9 @@ body {
     display: inline-block;
     padding: 5px 8px 5px;
     position: relative;
-    font-size: 12px;
-    line-height: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 8px;
     margin: 0 0 5px 20px;
     background-color: #ffd54f;
     color: #424242; }
@@ -5926,7 +5927,7 @@ body {
     .post-tags a:before {
       border-image: none;
       border-style: solid;
-      border-width: 10px 9px;
+      border-width: 9px 9px;
       border-color: transparent #ffd54f transparent transparent;
       content: "";
       height: 1px;
@@ -5942,7 +5943,7 @@ body {
       height: 4px;
       left: -2px;
       position: absolute;
-      top: 8px;
+      top: 7px;
       width: 4px;
       z-index: 999;
       border-radius: 5px;
