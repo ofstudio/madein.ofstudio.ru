@@ -49,7 +49,8 @@ module.exports = function (grunt) {
                         '**/*.hbs',
                         '**/*.json',
                         '!assets/**/*.scss',
-                        '!assets/bower_components/**'
+                        '!assets/bower_components/**',
+                        '!templates/**'
                     ],
                     dest: '<%= dist %>'
                 }, {
@@ -95,6 +96,14 @@ module.exports = function (grunt) {
             }
         },
 
+        handlebars: {
+            all: {
+                files: {
+                    '<%= src %>/assets/js/templates.js': ['<%= src %>/templates/**/*.hbs']
+                }
+            }
+        },
+
         watch: {
             livereload: {
                 files: [
@@ -132,7 +141,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('bower-install', ['wiredep']);
-    grunt.registerTask('build-theme', ['sass', 'clean:theme', 'jshint', 'useminPrepare',
+    grunt.registerTask('build-theme', ['sass', 'clean:theme', 'handlebars', 'jshint', 'useminPrepare',
         'copy:theme', 'concat', 'cssmin', 'uglify', 'usemin']);
     grunt.registerTask('deploy', ['build-theme', 'shell:deploy_theme']);
     grunt.registerTask('start-ghost', ['shell:ghost_start']);

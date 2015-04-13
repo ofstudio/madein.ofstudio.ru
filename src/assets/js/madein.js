@@ -22,11 +22,6 @@
             }('#footer-spacer', '#footer'));
 
             
-            // ========== Open external links in new window ==========
-            $('main a[href^="http://"]').attr('target', '_blank');
-            $('main a[href^="https://"]').attr('target', '_blank');
-            
-
             // ========== Plugins initialization ==========
             $('.button-collapse').sideNav({
                 edge: 'right',
@@ -75,13 +70,40 @@
                 );
             });
 
-        });
 
+            // ========== Assets render (via Ghost footnotes feature) ==========
+            var assetsContext = {
+                assets:[]
+            };
+            $('li.footnote').each(function (index, asset){
+                var a = {};
+                a.description = $(asset).find('em')[0].innerHTML;
+                a.links = [];
+                $(asset).find('a:not([href^="#fnref"])').each(function (index, link) {
+                    a.links.push({
+                        url: $(link).attr('href'),
+                        title: $(link).text(),
+                        download: ($(link).attr('href').indexOf('dl.madein.ofstudio.ru') >= 0)
+                    });
+                });
+                assetsContext.assets.push(a);
+            });
+            var assetsTemplate = JST['src/templates/post-assets.hbs'];
+            $('#post-assets').html(assetsTemplate(assetsContext));
+        });
+        
         
         // ========== Sticky footer initialization ==========
         window.onload = function () {
             $(window).resize();
         };
+
+        
+        // ========== Open external links in new window ==========
+        $('main a[href^="http://"]').attr('target', '_blank');
+        $('main a[href^="https://"]').attr('target', '_blank');
+
+
 
     })(jQuery);
 
