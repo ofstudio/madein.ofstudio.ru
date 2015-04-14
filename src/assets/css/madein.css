@@ -5923,7 +5923,7 @@ body {
     font-size: 11px;
     font-weight: 500;
     line-height: 8px;
-    margin: 0 0 5px 20px;
+    margin: 0 20px 5px 0;
     background-color: #ffd54f;
     color: #424242; }
     .post-tags a:hover {
