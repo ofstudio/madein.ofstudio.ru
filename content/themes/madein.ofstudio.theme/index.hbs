@@ -1,33 +1,33 @@
 {{!< default}}
 {{#is "index"}}
-    <main id="content" class="content" role="main">
-        <div class="index-section">
-            <article>
-                {{>about}}
-            </article>
-    </main>
-    </div>
+  <main id="content" class="content" role="main">
+    <div class="index-section">
+      <article>
+				{{>about}}
+      </article>
+  </main>
+  </div>
 {{/is}}
 
 {{#is "index, tag"}}
-    <div class="index-section">
-        <a name="portfolio"></a>
+  <div class="index-section">
+    <a name="portfolio"></a>
 
-        <div class="container madein-cards-container">
-            {{#is "index"}}
-                <h4>Мои работы</h4>
-            {{/is}}
-            {{#is "tag"}}
-                <h4>{{tag.name}}</h4>
-                {{#if tag.description}}
-                    <p>{{{tag.description}}}</p>
-                {{/if}}
-            {{/is}}
-            {{#is "paged"}}{{pagination}}{{/is}}
-            {{>loop}}
-            {{pagination}}
-        </div>
+    <div class="container madein-cards-container">
+			{{#is "index"}}
+        <h4>Мои работы</h4>
+			{{/is}}
+			{{#is "tag"}}
+        <h4>{{tag.name}}</h4>
+				{{#if tag.description}}
+          <p>{{{tag.description}}}</p>
+				{{/if}}
+			{{/is}}
+			{{#is "paged"}}{{pagination}}{{/is}}
+			{{>loop}}
+			{{pagination}}
     </div>
+  </div>
 {{/is}}
 <div id="page-bottom-margin"></div>
 <div id="footer-spacer"></div>

@@ -1,31 +1,31 @@
 {{#ifCond next "||" prev}}
-    <div class="madein-pagination center">
-        <span>
-            {{#if prev}}
-                <a href="{{page_url prev}}#portfolio"
-                   class="btn-flat btn-floating btn-large waves-effect waves-circle waves-light amber darken-1">
-                    <i class="mdi-navigation-chevron-left "></i>
-                </a>
-            {{else}}
-                <a href="#!"
-                   class="btn-flat btn-floating btn-large disabled grey lighten-2">
-                    <i class="mdi-navigation-chevron-left "></i>
-                </a>
-            {{/if}}
-        </span>
-        <span class="current">{{page}} / {{pages}}</span>
-        <span>
-            {{#if next}}
-                <a href="{{page_url next}}#portfolio"
-                   class="btn-flat btn-floating btn-large waves-effect waves-circle waves-light amber darken-1">
-                    <i class="mdi-navigation-chevron-right grey-text text-darken-3"></i>
-                </a>
-            {{else}}
-                <a href="#!"
-                   class="btn-flat btn-floating btn-large disabled grey lighten-2">
-                    <i class="mdi-navigation-chevron-right"></i>
-                </a>
-            {{/if}}
-        </span>
-    </div>
+  <div class="madein-pagination center">
+<span>
+	{{#if prev}}
+    <a href="{{page_url prev}}#portfolio"
+       class="btn-flat btn-floating btn-large waves-effect waves-circle waves-light amber darken-1">
+      <i class="mdi-navigation-chevron-left "></i>
+    </a>
+	{{else}}
+    <a href="#!"
+       class="btn-flat btn-floating btn-large disabled grey lighten-2">
+      <i class="mdi-navigation-chevron-left "></i>
+    </a>
+	{{/if}}
+</span>
+    <span class="current">{{page}} / {{pages}}</span>
+<span>
+	{{#if next}}
+    <a href="{{page_url next}}#portfolio"
+       class="btn-flat btn-floating btn-large waves-effect waves-circle waves-light amber darken-1">
+      <i class="mdi-navigation-chevron-right grey-text text-darken-3"></i>
+    </a>
+	{{else}}
+    <a href="#!"
+       class="btn-flat btn-floating btn-large disabled grey lighten-2">
+      <i class="mdi-navigation-chevron-right"></i>
+    </a>
+	{{/if}}
+</span>
+  </div>
 {{/ifCond}}
