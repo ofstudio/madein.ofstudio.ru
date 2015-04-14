@@ -5841,27 +5841,31 @@ body {
     color: #263238;
     font-size: 14px; }
 
+.madein-about h4 {
+  margin-top: 0 !important; }
 .madein-about .madein-about-text {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.8;
   margin-right: 8px; }
 
-.madein-about-card .card-content .card-title {
-  line-height: 0; }
-.madein-about-card .card-content p {
-  font-size: 16px;
-  margin-top: 6px;
-  line-height: 1.8; }
-  .madein-about-card .card-content p a {
-    color: #1E88E5; }
-    .madein-about-card .card-content p a .madein-icon {
-      color: #0D47A1;
-      font-size: 18px;
-      display: inline-block;
-      position: relative;
-      top: 4px;
-      margin-right: 4px; }
+.madein-about-card {
+  margin-top: 0; }
+  .madein-about-card .card-content .card-title {
+    line-height: 0; }
+  .madein-about-card .card-content p {
+    font-size: 16px;
+    margin-top: 6px;
+    line-height: 1.8; }
+    .madein-about-card .card-content p a {
+      color: #1E88E5; }
+      .madein-about-card .card-content p a .madein-icon {
+        color: #0D47A1;
+        font-size: 18px;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+        margin-right: 4px; }
 
 .index-section {
   margin: 32px auto 32px auto; }
@@ -5884,21 +5888,9 @@ body {
     .post-container {
       width: 100% !important;
       padding: 0 !important; } }
-  .post-container .post-image {
-    height: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover; }
-    @media only screen and (max-width : 992px) {
-      .post-container .post-image {
-        height: 320px; } }
-    @media only screen and (max-width : 600px) {
-      .post-container .post-image {
-        height: 240px; } }
   .post-container article {
     background-color: #fff;
-    padding: 20px 1.5rem 30px; }
+    padding: 40px 1.5rem 30px; }
     .post-container article img {
       max-width: 100%;
       height: auto; }
