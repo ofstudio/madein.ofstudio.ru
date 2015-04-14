@@ -117,29 +117,9 @@ body {
     padding: 0!important;
   }
   
-  .post-image {
-    height: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    
-    // Smooth parallax on mobile workaround (actually not good)
-    //transition: 0.3s linear;
-    // Force hardware acceleration
-    //transform: translate3d(0, 0, 0);
-    
-    @media #{$medium-and-down} {
-      height: 320px;
-    }
-    @media #{$small-and-down} {
-      height: 240px;
-    }
-  }
-  
   article {
     background-color: #fff;
-    padding: 20px $gutter-width 30px;
+    padding: 40px $gutter-width 30px;
     
     img {
       max-width: 100%;
