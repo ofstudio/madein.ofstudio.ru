@@ -1,0 +1,2 @@
+- fix tags left margin
+- replace parallax with fixed bg image, remove unnecessary css and js

@@ -124,8 +124,16 @@ module.exports = function (grunt) {
                     '<%= src %>/default.hbs'
                 ],
                 exclude: [
-                    'materialize'
-                ]
+                    'materialize' // use custom build. See .materialize-js-concat-order.html and madein.scss
+                ],
+                overrides: {
+                    'jquery': {
+                        main: 'dist/jquery.min.js'
+                    },
+                    'handlebars': {
+                        main: 'handlebars.runtime.min.js'
+                    }
+                }
             }
         },
 
