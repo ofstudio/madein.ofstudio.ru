@@ -55,8 +55,12 @@ body {
   .madein-about-text{
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-right: 8px;
+    @media #{$small-and-down} {
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
   }
 }
 
