@@ -21,13 +21,22 @@
                 };
             }('#footer-spacer', '#footer'));
 
+
+            // ========== Parallax effect ==========
+            // Very slow on mobile devices
+            //$(window).scroll(function() {
+            //    var postImage = $('.post-image'),
+            //        boxHeight = postImage.height(),
+            //        scrolledY = (50 - $(window).scrollTop() / boxHeight * 30).toFixed(2);
+            //    postImage.css('background-position', '50% ' + scrolledY + '%');
+            //});
+            
             
             // ========== Plugins initialization ==========
             $('.button-collapse').sideNav({
                 edge: 'right',
                 menuWidth: 200
             });
-            $('.parallax').parallax();
 
 
             // ========== materilbox-fullscreen init ==========

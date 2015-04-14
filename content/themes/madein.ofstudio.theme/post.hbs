@@ -3,8 +3,7 @@
     <main id="content" class="content" role="main">
         <div class="container post-container z-depth-1">
             {{#if image}}
-                <div class="parallax-container">
-                    <div class="parallax"><img src="{{image}}"></div>
+                <div class="post-image" style="background-image: url('{{image}}')">
                 </div>
             {{/if}}
             <article class="{{post_class}}">

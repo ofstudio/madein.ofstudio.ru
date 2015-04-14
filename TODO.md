@@ -1,1 +1,2 @@
-- replace parallax with fixed bg image, remove unnecessary css and js
+- something about post cover image (mb parallax?)
+

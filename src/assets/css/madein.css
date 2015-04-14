@@ -5884,15 +5884,17 @@ body {
     .post-container {
       width: 100% !important;
       padding: 0 !important; } }
-  .post-container .parallax-container {
-    height: 360px; }
-    .post-container .parallax-container img {
-      max-width: 100%; }
+  .post-container .post-image {
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; }
     @media only screen and (max-width : 992px) {
-      .post-container .parallax-container {
-        height: 300px; } }
+      .post-container .post-image {
+        height: 320px; } }
     @media only screen and (max-width : 600px) {
-      .post-container .parallax-container {
+      .post-container .post-image {
         height: 240px; } }
   .post-container article {
     background-color: #fff;
