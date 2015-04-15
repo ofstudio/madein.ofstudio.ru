@@ -1998,7 +1998,7 @@ ul {
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
-.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
+.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover, .post-container article strong img {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
@@ -5898,6 +5898,18 @@ body {
     .post-container article img {
       max-width: 100%;
       height: auto; }
+    .post-container article strong img {
+      cursor: pointer;
+      max-width: 80%;
+      display: block;
+      margin: 0 auto 30px; }
+      @media only screen and (max-width : 992px) {
+        .post-container article strong img {
+          max-width: 90%; } }
+      @media only screen and (max-width : 600px) {
+        .post-container article strong img {
+          max-width: 100%;
+          box-shadow: none; } }
     .post-container article h1, .post-container article h2, .post-container article h3 {
       font-weight: 300;
       color: #424242; }

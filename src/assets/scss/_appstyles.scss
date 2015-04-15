@@ -136,6 +136,21 @@ body {
       height: auto;
     }
     
+    strong img { // materialbox-fullscreen selector
+      @extend .z-depth-1-half;
+      cursor: pointer;
+      max-width: 80%;
+      display: block;
+      margin: 0 auto 30px;
+      @media #{$medium-and-down} {
+        max-width: 90%;
+      }
+      @media #{$small-and-down} {
+        max-width: 100%;
+        box-shadow: none;
+      }
+    }
+    
     h1,h2,h3 {
       font-weight: 300;
       color: color("grey", "darken-3");
