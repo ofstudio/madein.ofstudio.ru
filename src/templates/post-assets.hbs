@@ -1,14 +1,14 @@
 {{#each assets}}
-	{{{description}}}
-	{{#each links}}
+  {{{description}}}
+  {{#each links}}
     <a href="{{url}}" class="asset-link" {{^if download}}target="_blank"{{/if}}>
-			{{#if download}}
+      {{#if download}}
         <i class="mdi-file-file-download"></i>
-				{{title}}
-			{{else}}
+        {{title}}
+      {{else}}
         <strong>{{title}}</strong>
-			{{/if}}
+      {{/if}}
     </a>
-	{{/each}}
+  {{/each}}
   <br>
 {{/each}}

@@ -3,7 +3,7 @@ this["JST"] = this["JST"] || {};
 this["JST"]["src/templates/post-assets.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var stack1, helper;
 
-  return "	"
+  return "  "
     + ((stack1 = ((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"description","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "\n"
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.links : depth0),{"name":"each","hash":{},"fn":this.program(2, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
@@ -23,7 +23,7 @@ this["JST"]["src/templates/post-assets.hbs"] = Handlebars.template({"1":function
 },"5":function(depth0,helpers,partials,data) {
     var helper;
 
-  return "        <i class=\"mdi-file-file-download\"></i>\n				"
+  return "        <i class=\"mdi-file-file-download\"></i>\n        "
     + this.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
     + "\n";
 },"7":function(depth0,helpers,partials,data) {

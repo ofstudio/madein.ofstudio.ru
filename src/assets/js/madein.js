@@ -5,7 +5,7 @@
     (function ($) {
 
         $(document).ready(function () {
-            
+
             // ========== Sticky footer feature ==========
             $(window).resize(function (sel1, sel2) {
                 var spacer = $(sel1),
@@ -21,7 +21,7 @@
                 };
             }('#footer-spacer', '#footer'));
             
-            
+
             // ========== Plugins initialization ==========
             $('.button-collapse').sideNav({
                 edge: 'right',
@@ -72,9 +72,9 @@
 
             // ========== Assets render (via Ghost footnotes feature) ==========
             var assetsContext = {
-                assets:[]
+                assets: []
             };
-            $('li.footnote').each(function (index, asset){
+            $('li.footnote').each(function (index, asset) {
                 var a = {};
                 a.description = $(asset).find('em')[0].innerHTML;
                 a.links = [];
@@ -94,15 +94,15 @@
             // ========== Open external links in new window ==========
             $('main a[href^="http://"]').attr('target', '_blank');
             $('main a[href^="https://"]').attr('target', '_blank');
-            
+
         }); // $(document).ready
-        
-        
+
+
         // ========== Sticky footer initialization ==========
         window.onload = function () {
             $(window).resize();
         };
-        
+
     })(jQuery);
 
 })(document, window);

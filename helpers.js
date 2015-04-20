@@ -1,7 +1,7 @@
 var hbs = require('ghost/node_modules/express-hbs');
 
 
-module.exports = function(){
+module.exports = function () {
 
     // {{#node_env}} Helper
     //

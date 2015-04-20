@@ -12,12 +12,12 @@ body {
 .madein-nav {
   //margin-bottom: 32px;
   background-color: rgba(255, 255, 255, .92);
-  
+
   .home-nav-icon {
     font-size: 22px;
     color: color("grey", "darken-1");
   }
-  
+
   .container.nav-wrapper {
     padding: 0 $gutter-width 0 0;
     @media #{$small-and-down} {
@@ -44,15 +44,14 @@ body {
   }
 }
 
-
 // ================== About Me Section ==================
 .madein-about {
-  
+
   h4 {
-    margin-top: 0!important;
+    margin-top: 0 !important;
   }
 
-  .madein-about-text{
+  .madein-about-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
@@ -66,7 +65,7 @@ body {
 
 .madein-about-card {
   margin-top: 0;
-  
+
   .card-content {
     .card-title {
       line-height: 0;
@@ -92,12 +91,10 @@ body {
   }
 }
 
-
 // ================== Index pages ==================
-.index-section{
+.index-section {
   margin: 32px auto 32px auto;
 }
-
 
 // ================== Post Assets (via Ghost footnotes feature)==================
 .footnotes {
@@ -117,26 +114,26 @@ body {
   }
 }
 
-
 // ================== Post ==================
 .post-container {
   padding: 0;
 
   @media #{$medium-and-down} {
-    width: 100%!important;
-    padding: 0!important;
+    width: 100% !important;
+    padding: 0 !important;
   }
-  
+
   article {
     background-color: #fff;
     padding: 40px $gutter-width 30px;
-    
+
     img {
       max-width: 100%;
       height: auto;
     }
-    
-    strong img { // materialbox-fullscreen selector
+
+    strong img {
+      // materialbox-fullscreen selector
       @extend .z-depth-1-half;
       cursor: pointer;
       max-width: 80%;
@@ -150,15 +147,15 @@ body {
         box-shadow: none;
       }
     }
-    
-    h1,h2,h3 {
+
+    h1, h2, h3 {
       font-weight: 300;
       color: color("grey", "darken-3");
     }
-    
+
     h1 {
       font-size: 32px;
-      line-height: 1.2!important;
+      line-height: 1.2 !important;
       margin: 0 0 24px 0;
     }
 
@@ -173,11 +170,10 @@ body {
     h4 {
       font-size: 16px;
     }
-    
-  }
-  
-}
 
+  }
+
+}
 
 // ================== Post tags ==================
 .post-tags {
@@ -231,12 +227,11 @@ body {
   }
 }
 
-
 // ================== Portfolio cards ==================
 .madein-card {
   cursor: pointer;
 
-  .card-content{
+  .card-content {
     padding-top: 0;
     padding-bottom: 5px;
   }
@@ -247,7 +242,6 @@ body {
   }
 
 }
-
 
 // ================== Portfolio Pagination ==================
 .madein-pagination {
@@ -261,7 +255,8 @@ body {
 }
 
 // ================== Footer ==================
-#footer-spacer { // Sticky footer feature
+#footer-spacer {
+  // Sticky footer feature
   height: 0;
   transition: height 1.2s ease;
   -webkit-transition: height 1.2s ease;
@@ -269,7 +264,8 @@ body {
   -o-transition: height 1.2s ease;
 }
 
-#page-bottom-margin { // Bottom margin for index pages on tablet and smaller
+#page-bottom-margin {
+  // Bottom margin for index pages on tablet and smaller
   @media #{$medium-and-down} {
     margin-top: 48px;
   }
@@ -294,7 +290,6 @@ body {
     }
   }
 }
-
 
 // ================== Medium-narrow media query ==================
 // Used for top nav / side nav switching

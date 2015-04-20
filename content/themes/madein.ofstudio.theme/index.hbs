@@ -3,7 +3,7 @@
   <main id="content" class="content" role="main">
     <div class="index-section">
       <article>
-				{{>about}}
+        {{>about}}
       </article>
   </main>
   </div>
@@ -14,18 +14,18 @@
     <a name="portfolio"></a>
 
     <div class="container madein-cards-container">
-			{{#is "index"}}
+      {{#is "index"}}
         <h4>Мои работы</h4>
-			{{/is}}
-			{{#is "tag"}}
+      {{/is}}
+      {{#is "tag"}}
         <h4>{{tag.name}}</h4>
-				{{#if tag.description}}
+        {{#if tag.description}}
           <p>{{{tag.description}}}</p>
-				{{/if}}
-			{{/is}}
-			{{#is "paged"}}{{pagination}}{{/is}}
-			{{>loop}}
-			{{pagination}}
+        {{/if}}
+      {{/is}}
+      {{#is "paged"}}{{pagination}}{{/is}}
+      {{>loop}}
+      {{pagination}}
     </div>
   </div>
 {{/is}}
