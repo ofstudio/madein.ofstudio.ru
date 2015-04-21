@@ -1,6 +1,7 @@
-this["JST"] = this["JST"] || {};
+this["Handlebars"] = this["Handlebars"] || {};
+this["Handlebars"]["templates"] = this["Handlebars"]["templates"] || {};
 
-this["JST"]["src/templates/post-assets.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
+this["Handlebars"]["templates"]["post-assets.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var stack1, helper;
 
   return "  "

@@ -87,8 +87,7 @@
                 });
                 assetsContext.assets.push(a);
             });
-            var assetsTemplate = JST['src/templates/post-assets.hbs'];
-            $('#post-assets').html(assetsTemplate(assetsContext));
+            $('#post-assets').html(Handlebars.templates['post-assets.hbs'](assetsContext));
 
 
             // ========== Open external links in new window ==========

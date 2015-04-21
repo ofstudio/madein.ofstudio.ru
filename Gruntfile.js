@@ -97,7 +97,14 @@ module.exports = function (grunt) {
         },
 
         handlebars: {
-            all: {
+            compile: {
+                options: {
+                    namespace: 'Handlebars.templates',
+                    processName: function(filePath) { // input:  templates/_header.hbs
+                        var pieces = filePath.split('/');
+                        return pieces[pieces.length - 1]; // output: _header.hbs
+                    }
+                },
                 files: {
                     '<%= src %>/assets/js/templates.js': ['<%= src %>/templates/**/*.hbs']
                 }

@@ -16,6 +16,6 @@
     "jQuery": false,
     "$": false,
     "Modernizr": false,
-    "JST": false
+    "Handlebars": false
   }
 }
