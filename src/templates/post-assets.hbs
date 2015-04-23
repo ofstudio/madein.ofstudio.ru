@@ -1,7 +1,7 @@
 {{#each assets}}
   {{{description}}}
   {{#each links}}
-    <a href="{{url}}" class="asset-link" {{^if download}}target="_blank"{{/if}}>
+    <a href="{{url}}" class="asset-link" {{#if external}}target="_blank"{{/if}}>
       {{#if download}}
         <i class="mdi-file-file-download"></i>
         {{title}}

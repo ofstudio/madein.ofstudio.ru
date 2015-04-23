@@ -15,7 +15,7 @@ this["Handlebars"]["templates"]["post-assets.hbs"] = Handlebars.template({"1":fu
   return "    <a href=\""
     + this.escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"url","hash":{},"data":data}) : helper)))
     + "\" class=\"asset-link\" "
-    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.download : depth0),{"name":"if","hash":{},"fn":this.noop,"inverse":this.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.external : depth0),{"name":"if","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + ">\n"
     + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.download : depth0),{"name":"if","hash":{},"fn":this.program(5, data, 0),"inverse":this.program(7, data, 0),"data":data})) != null ? stack1 : "")
     + "    </a>\n";
