@@ -82,7 +82,8 @@
                     a.links.push({
                         url: $(link).attr('href'),
                         title: $(link).text(),
-                        external: ($(link).attr('href').indexOf('://') >= 0)
+                        external: ($(link).attr('href').indexOf('://') >= 0),
+                        download: ($(link).attr('href').indexOf('://dl.madein.ofstudio.ru') >= 0)
                     });
                 });
                 assetsContext.assets.push(a);
