@@ -5955,6 +5955,8 @@ body {
       position: relative;
       top: 4px;
       padding-right: 4px; }
+  #footer .footer-copyright {
+    font-size: 12px; }
 
 @media only screen and (max-width : 740px) {
   .hide-on-med-narrow-and-down {
