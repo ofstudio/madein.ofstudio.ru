@@ -5803,18 +5803,18 @@ body {
   .madein-about-card .card-content .card-title {
     line-height: 0; }
   .madein-about-card .card-content p {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 6px;
     line-height: 1.8; }
     .madein-about-card .card-content p a {
       color: #1E88E5; }
       .madein-about-card .card-content p a .madein-icon {
-        color: #0D47A1;
-        font-size: 18px;
+        color: #1976D2;
+        font-size: 16px;
         display: inline-block;
         position: relative;
-        top: 4px;
-        margin-right: 4px; }
+        top: 3px;
+        margin-right: 3px; }
 
 .index-section {
   margin: 32px auto 32px auto; }

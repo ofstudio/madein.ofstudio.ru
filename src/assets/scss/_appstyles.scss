@@ -71,7 +71,7 @@ body {
       line-height: 0;
     }
     p {
-      font-size: 16px;
+      font-size: 14px;
       margin-top: 6px;
       line-height: 1.8;
 
@@ -79,12 +79,12 @@ body {
         color: color("blue", "darken-1");
 
         .madein-icon {
-          color: color("blue", "darken-4");
-          font-size: 18px;
+          color: color("blue", "darken-2");
+          font-size: 16px;
           display: inline-block;
           position: relative;
-          top: 4px;
-          margin-right: 4px;
+          top: 3px;
+          margin-right: 3px;
         }
       }
     }
