@@ -15,26 +15,26 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 34px;
-  margin: 0 0 24px 0;
+  font-size: rem-calc(34px);
+  margin: rem-calc(0 0 24px 0);
 }
 
 h2 {
-  font-size: 24px;
+  font-size: rem-calc(24px);
 }
 
 h3 {
-  font-size: 20px;
+  font-size: rem-calc(20px);
 }
 
 h4 {
-  font-size: 18px;
+  font-size: rem-calc(18px);
 }
 
 h5 {
   font-weight: 300;
-  font-size: 24px;
-  margin: 64px 0 24px 0;
+  font-size: rem-calc(24px);
+  margin: rem-calc(64px 0 24px 0);
 }
 
 // ================== Header & Navigation ==================
@@ -43,7 +43,7 @@ h5 {
   background-color: rgba(255, 255, 255, .92);
 
   .home-nav-icon {
-    font-size: 22px;
+    font-size: rem-calc(22px);
     color: color("grey", "darken-1");
   }
 
@@ -55,21 +55,21 @@ h5 {
   }
 
   .madein-brand-logo {
-    padding: 0 15px;
+    padding: rem-calc(0 15px);
     background-color: color("amber", "darken-1");
     color: color("grey", "darken-4");
-    font-size: 16px;
+    font-size: rem-calc(16px);
     font-weight: 500;
 
     span {
-      font-size: 14px;
+      font-size: rem-calc(14px);
       font-weight: 400;
     }
   }
 
   a {
     color: color("blue-grey", "darken-4");
-    font-size: 14px;
+    font-size: rem-calc(14px);
   }
 }
 
@@ -77,7 +77,7 @@ h5 {
 .about-me p {
   line-height: 1.8;
   font-weight: 300;
-  font-size: 16px;
+  font-size: rem-calc(16px);
 }
 
 .madein-about-card {
@@ -85,24 +85,24 @@ h5 {
 
   .card-content {
     margin: 0;
-    padding-top: 12px;
-    font-size: 16px;
+    padding-top: rem-calc(12px);
+    font-size: rem-calc(16px);
     line-height: 1.6;
     font-weight: 400;
     color: color("grey", "darken-3");
 
     h2 {
-      font-size: 28px;
+      font-size: rem-calc(28px);
       font-weight: 300;
-      margin: 0 0 2px;
+      margin: rem-calc(0 0 2px);
       line-height: 1.2;
     }
   }
 
   .card-action {
-    padding: 12px 20px 15px;
+    padding: rem-calc(12px 20px 15px);
     font-weight: 400;
-    font-size: 13px;
+    font-size: rem-calc(13px);
     line-height: 1.6;
     color: color("grey", "darken-4");
     white-space: nowrap;
@@ -114,18 +114,18 @@ h5 {
 
     .madein-icon {
       color: color("amber", "darken-3");
-      font-size: 16px;
+      font-size: rem-calc(16px);
       display: inline-block;
       position: relative;
-      top: 3px;
-      padding-right: 4px;
+      top: rem-calc(3px);
+      padding-right: rem-calc(4px);
     }
   }
 }
 
 // ================== Index pages ==================
 .index-section {
-  margin: 32px auto 32px auto;
+  margin: rem-calc(32px) auto rem-calc(32px) auto;
 }
 
 // ================== Post Assets (via Ghost footnotes feature)==================
@@ -134,14 +134,14 @@ h5 {
 }
 
 #post-assets {
-  margin-bottom: 24px;
-  font-size: 12px;
+  margin-bottom: rem-calc(24px);
+  font-size: rem-calc(12px);
   color: color("grey", "darken-2");
 
   i[class^="mdi-"] {
     position: relative;
-    top: 2px;
-    margin-left: 5px;
+    top: rem-calc(2px);
+    margin-left: rem-calc(5px);
   }
 }
 
@@ -151,21 +151,21 @@ aside {
 }
 
 #aside-container {
-  margin-top: 50px;
+  margin-top: rem-calc(50px);
 
   aside {
-    margin-top: 40px;
+    margin-top: rem-calc(40px);
     display: block;
     color: color("amber", "darken-1");
     font-weight: 200;
-    font-size: 22px;
+    font-size: rem-calc(22px);
     line-height: 1.8;
     border-left: 1px solid color("amber", "base");
-    padding-left: 15px;
+    padding-left: rem-calc(15px);
 
     @media #{$medium-and-down} {
       font-weight: 200;
-      font-size: 18px;
+      font-size: rem-calc(18px);
     }
   }
 }
@@ -182,7 +182,7 @@ aside {
 
   article {
     background-color: #fff;
-    padding: 40px $gutter-width 30px;
+    padding: rem-calc(40px) $gutter-width rem-calc(30px);
 
     img {
       max-width: 100%;
@@ -197,11 +197,11 @@ aside {
       display: block;
       margin: 0 auto 10px;
       @media #{$medium-and-down} {
-        margin: 0 0 10px;
+        margin: 0 0 rem-calc(10px);
         max-width: 100%;
       }
       @media #{$small-and-down} {
-        margin: 0 0 5px;
+        margin: rem-calc(0 0 5px);
         max-width: 100%;
         box-shadow: none;
       }
@@ -213,16 +213,16 @@ aside {
 
 // ================== Post tags ==================
 .post-tags {
-  margin: 32px 0 8px;
+  margin: rem-calc(32px 0 8px);
 
   a {
     display: inline-block;
-    padding: 5px 8px 5px;
+    padding: rem-calc(5px 8px 5px);
     position: relative;
-    font-size: 11px;
+    font-size: rem-calc(11px);
     font-weight: 500;
-    line-height: 8px;
-    margin: 0 10px 5px 10px;
+    line-height: rem-calc(8px);
+    margin: rem-calc(0 10px 5px 10px);
     background-color: color("amber", "lighten-2");
     color: color("grey", "darken-3");
 
@@ -233,14 +233,14 @@ aside {
     &:before {
       border-image: none;
       border-style: solid;
-      border-width: 9px 9px;
+      border-width: rem-calc(9px 9px);
       border-color: transparent color("amber", "lighten-2") transparent transparent;
       content: "";
-      height: 1px;
-      left: -17px;
+      height: rem-calc(1px);
+      left: rem-calc(-17px);
       position: absolute;
       top: 0;
-      width: 1px;
+      width: rem-calc(1px);
     }
 
     &:hover:before {
@@ -250,15 +250,15 @@ aside {
     &:after {
       background: #fff;
       content: "";
-      height: 4px;
-      left: -2px;
+      height: rem-calc(4px);
+      left: rem-calc(-2px);
       position: absolute;
-      top: 7px;
-      width: 4px;
+      top: rem-calc(7px);
+      width: rem-calc(4px);
       z-index: 999;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
+      border-radius: rem-calc(5px);
+      -moz-border-radius: rem-calc(5px);
+      -webkit-border-radius: rem-calc(5px);
     }
   }
 }
@@ -269,11 +269,11 @@ aside {
 
   .card-content {
     padding-top: 0;
-    padding-bottom: 5px;
+    padding-bottom: rem-calc(5px);
   }
 
   .card-title {
-    font-size: 18px;
+    font-size: rem-calc(18px);
     font-weight: 400;
   }
 
@@ -281,12 +281,12 @@ aside {
 
 // ================== Portfolio Pagination ==================
 .madein-pagination {
-  margin: 20px 0;
+  margin: rem-calc(20px 0);
 
   .current {
-    font-size: 20px;
+    font-size: rem-calc(20px);
     font-weight: 300;
-    padding: 0 20px;
+    padding: rem-calc(0 20px);
   }
 }
 
@@ -303,12 +303,12 @@ aside {
 #page-bottom-margin {
   // Bottom margin for index pages on tablet and smaller
   @media #{$medium-and-down} {
-    margin-top: 48px;
+    margin-top: rem-calc(48px);
   }
 }
 
 #footer {
-  margin-top: 64px;
+  margin-top: rem-calc(64px);
   box-shadow: none;
   @media #{$medium-and-down} {
     margin-top: 0; // #page-bottom-margin used instead on index pages
@@ -318,16 +318,16 @@ aside {
     line-height: 2;
 
     .madein-icon {
-      font-size: 18px;
+      font-size: rem-calc(18px);
       display: inline-block;
       position: relative;
-      top: 4px;
-      padding-right: 4px;
+      top: rem-calc(4px);
+      padding-right: rem-calc(4px);
     }
   }
 
   .footer-copyright {
-    font-size: 12px;
+    font-size: rem-calc(12px);
   }
 }
 
