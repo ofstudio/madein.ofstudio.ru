@@ -1102,6 +1102,21 @@ span.badge {
 .mdi-communication-location-on:before {
   content: "\e6ea"; }
 
+.mdi-action-home:before {
+  content: "\e636"; }
+
+.mdi-file-file-download:before {
+  content: "\e7a4"; }
+
+.mdi-navigation-menu:before {
+  content: "\e8a1"; }
+
+.mdi-navigation-chevron-right:before {
+  content: "\e89b"; }
+
+.mdi-navigation-chevron-left:before {
+  content: "\e89a"; }
+
 .container {
   padding: 0 1.5rem;
   margin: 0 auto;
@@ -2091,6 +2106,9 @@ body {
 #materialbox-overlay {
   background-color: rgba(255, 255, 255, 0.75); }
 
+strong {
+  font-weight: 600; }
+
 h1, h2, h3, h4, h5 {
   font-weight: 400;
   color: #424242;
@@ -2116,6 +2134,9 @@ h5 {
 
 .madein-nav {
   background-color: rgba(255, 255, 255, 0.92); }
+  .madein-nav .side-nav li {
+    font-size: 1rem;
+    text-transform: uppercase; }
   .madein-nav .home-nav-icon {
     font-size: 1.375rem;
     color: #757575; }
@@ -2140,7 +2161,11 @@ h5 {
 .about-me p {
   line-height: 1.8;
   font-weight: 300;
-  font-size: 1rem; }
+  font-size: 1.125rem; }
+  @media only screen and (max-width : 992px) {
+    .about-me p {
+      font-weight: 400;
+      font-size: 1rem; } }
 
 .madein-about-card {
   margin: 0; }
@@ -2197,7 +2222,7 @@ aside {
   #aside-container aside {
     margin-top: 2.5rem;
     display: block;
-    color: #ffb300;
+    color: #ffa000;
     font-weight: 200;
     font-size: 1.375rem;
     line-height: 1.8;
