@@ -1,43 +1,46 @@
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<meta name='yandex-verification' content='614f892a07599f6a' />
+<meta name='yandex-verification' content='614f892a07599f6a'/>
 {{#is "index, tag"}} {{!-- META for index and tag --}}
-{{#is "index"}}
-<title>{{@blog.title}}</title>
-<meta itemprop="name" content="{{@blog.title}}"/>
-{{/is}}
-{{#is "tag"}}
-<title>{{tag.name}} — {{@blog.title}}</title>
-<meta itemprop="name" content="{{tag.name}} — {{@blog.title}}"/>
-{{/is}}
-<meta name="description" content="{{@blog.description}}"/>
-<meta itemprop="description" content="{{@blog.description}}"/>
-{{#if @blog.cover}}
-<link rel="image_src" href="{{@blog.url}}{{@blog.cover}}"/>
-<meta itemprop="image" content="{{@blog.url}}{{@blog.cover}}"/>
-{{/if}}
+  {{#is "index"}}
+    <title>{{@blog.title}}</title>
+    <meta itemprop="name" content="{{@blog.title}}"/>
+  {{/is}}
+  {{#is "tag"}}
+    <title>{{tag.name}} — {{@blog.title}}</title>
+    <meta itemprop="name" content="{{tag.name}} — {{@blog.title}}"/>
+  {{/is}}
+  <meta name="description" content="{{@blog.description}}"/>
+  <meta itemprop="description" content="{{@blog.description}}"/>
+  {{#if @blog.cover}}
+    <link rel="image_src" href="{{@blog.url}}{{@blog.cover}}"/>
+    <meta itemprop="image" content="{{@blog.url}}{{@blog.cover}}"/>
+  {{/if}}
 {{/is}}
 {{#is "post, page"}}
-<title>{{meta_title}} — {{@blog.title}}</title>
-<meta itemprop="name" content="{{meta_title}} — {{@blog.title}}"/>
-{{#if post.meta_description }}
-<meta name="description" content="{{meta_description}}"/>
-<meta itemprop="description" content="{{meta_description}}"/>
-{{else}}
-{{#post}}
-<meta name="description" content="{{excerpt words="27"}}…"/>
-<meta itemprop="description" content="{{excerpt words="27"}}…"/>
-{{/post}}
-{{/if}}
-{{#post}}
-{{#if image}}
-<link rel="image_src" href="{{@blog.url}}{{image}}"/>
-<meta itemprop="image" content="{{@blog.url}}{{image}}"/>
-{{/if}}
-{{/post}}
+  {{#post}}
+    <title>{{title}} — {{@blog.title}}</title>
+    <meta itemprop="name" content="{{title}} — {{@blog.title}}"/>
+    {{#if post.meta_description }}
+      <meta name="description" content="{{meta_description}}"/>
+      <meta itemprop="description" content="{{meta_description}}"/>
+    {{else}}
+      <meta name="description" content="{{excerpt words="27"}}…"/>
+      <meta itemprop="description" content="{{excerpt words="27"}}…"/>
+    {{/if}}
+    {{#if image}}
+      <link rel="image_src" href="{{@blog.url}}{{image}}"/>
+      <meta itemprop="image" content="{{@blog.url}}{{image}}"/>
+    {{else}}
+      {{#if @blog.cover}}
+        <link rel="image_src" href="{{@blog.url}}{{@blog.cover}}"/>
+        <meta itemprop="image" content="{{@blog.url}}{{@blog.cover}}"/>
+      {{/if}}
+    {{/if}}
+  {{/post}}
 {{/is}}
-<link rel="shortcut icon" href="{{@blog.url}}/assets/img/meta/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="{{@blog.url}}/assets/img/meta/favicon.ico" type="image/x-icon"/>
 <link rel="apple-touch-icon" sizes="57x57" href="{{@blog.url}}/assets/img/meta/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="{{@blog.url}}/assets/img/meta/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="{{@blog.url}}/assets/img/meta/apple-touch-icon-72x72.png">
@@ -51,4 +54,4 @@
 <link rel="icon" type="image/png" href="{{@blog.url}}/assets/img/meta/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="{{@blog.url}}/assets/img/meta/favicon-96x96.png" sizes="96x96">
 <link rel="icon" type="image/png" href="{{@blog.url}}/assets/img/meta/android-chrome-192x192.png" sizes="192x192">
-<meta name="msapplication-square310x310logo" content="{{@blog.url}}/assets/img/meta/largetile.png" />
+<meta name="msapplication-square310x310logo" content="{{@blog.url}}/assets/img/meta/largetile.png"/>
