@@ -73,36 +73,15 @@ h5 {
   }
 }
 
-// ================== About Me Section ==================
-.madein-about {
-
-  h4 {
-    margin-top: 0 !important;
-  }
-
-  .madein-about-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6;
-    @media #{$small-and-down} {
-      font-size: 14px;
-      margin-bottom: 32px;
-    }
-  }
+// ================== About Me Card ==================
+.about-me p {
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .madein-about-card {
-  margin: 0 0 20px 25px;
-  max-width: 280px;
-  
-  @media #{$medium-and-down} {
-    max-width: 220px;
-  }
-  
-  @media #{$small-and-down} {
-    max-width: 100%;
-    margin: 0 0 40px;
-  }
+  margin: 0;
 
   .card-content {
     margin: 0;
@@ -111,7 +90,7 @@ h5 {
     line-height: 1.6;
     font-weight: 400;
     color: color("grey", "darken-3");
-    
+
     h2 {
       font-size: 28px;
       font-weight: 300;
@@ -119,17 +98,18 @@ h5 {
       line-height: 1.2;
     }
   }
-  
+
   .card-action {
     padding: 12px 20px 15px;
     font-weight: 400;
     font-size: 13px;
     line-height: 1.6;
     color: color("grey", "darken-4");
+    white-space: nowrap;
 
     a {
       text-transform: none;
-      color: color("grey", "darken-4")!important;
+      color: color("grey", "darken-4") !important;
     }
 
     .madein-icon {
@@ -146,7 +126,6 @@ h5 {
 // ================== Index pages ==================
 .index-section {
   margin: 32px auto 32px auto;
-  clear: both;
 }
 
 // ================== Post Assets (via Ghost footnotes feature)==================
@@ -304,7 +283,6 @@ h5 {
 }
 
 #footer {
-  clear: both;
   margin-top: 64px;
   box-shadow: none;
   @media #{$medium-and-down} {
