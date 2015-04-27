@@ -5763,6 +5763,29 @@ body {
 #materialbox-overlay {
   background-color: rgba(255, 255, 255, 0.75); }
 
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+  color: #424242;
+  line-height: 1.2 !important; }
+
+h1 {
+  font-size: 34px;
+  margin: 0 0 24px 0; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 20px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 64px 0 24px 0; }
+
 .madein-nav {
   background-color: rgba(255, 255, 255, 0.92); }
   .madein-nav .home-nav-icon {
@@ -5791,33 +5814,54 @@ body {
 .madein-about .madein-about-text {
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.6;
-  margin-right: 8px; }
+  line-height: 1.6; }
   @media only screen and (max-width : 600px) {
     .madein-about .madein-about-text {
       font-size: 14px;
       margin-bottom: 32px; } }
 
 .madein-about-card {
-  margin-top: 0; }
-  .madein-about-card .card-content .card-title {
-    line-height: 0; }
-  .madein-about-card .card-content p {
-    font-size: 14px;
-    margin-top: 6px;
-    line-height: 1.8; }
-    .madein-about-card .card-content p a {
-      color: #1E88E5; }
-      .madein-about-card .card-content p a .madein-icon {
-        color: #1976D2;
-        font-size: 16px;
-        display: inline-block;
-        position: relative;
-        top: 3px;
-        margin-right: 3px; }
+  margin: 0 0 20px 25px;
+  max-width: 280px; }
+  @media only screen and (max-width : 992px) {
+    .madein-about-card {
+      max-width: 220px; } }
+  @media only screen and (max-width : 600px) {
+    .madein-about-card {
+      max-width: 100%;
+      margin: 0 0 40px; } }
+  .madein-about-card .card-content {
+    margin: 0;
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #424242; }
+    .madein-about-card .card-content h2 {
+      font-size: 28px;
+      font-weight: 300;
+      margin: 0 0 2px;
+      line-height: 1.2; }
+  .madein-about-card .card-action {
+    padding: 12px 20px 15px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #212121; }
+    .madein-about-card .card-action a {
+      text-transform: none;
+      color: #212121 !important; }
+    .madein-about-card .card-action .madein-icon {
+      color: #ff8f00;
+      font-size: 16px;
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      padding-right: 4px; }
 
 .index-section {
-  margin: 32px auto 32px auto; }
+  margin: 32px auto 32px auto;
+  clear: both; }
 
 .footnotes {
   display: none; }
@@ -5857,22 +5901,6 @@ body {
           margin: 0 0 5px;
           max-width: 100%;
           box-shadow: none; } }
-    .post-container article h1, .post-container article h2, .post-container article h3, .post-container article h4, .post-container article h5 {
-      font-weight: 300;
-      color: #424242; }
-    .post-container article h1 {
-      font-size: 32px;
-      line-height: 1.2 !important;
-      margin: 0 0 24px 0; }
-    .post-container article h2 {
-      font-size: 24px; }
-    .post-container article h3 {
-      font-size: 20px; }
-    .post-container article h4 {
-      font-size: 18px; }
-    .post-container article h5 {
-      font-size: 24px;
-      margin: 64px 0 24px 0; }
 
 .post-tags {
   margin: 32px 0 8px; }
@@ -5942,6 +5970,7 @@ body {
     margin-top: 48px; } }
 
 #footer {
+  clear: both;
   margin-top: 64px;
   box-shadow: none; }
   @media only screen and (max-width : 992px) {

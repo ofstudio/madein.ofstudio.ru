@@ -84,7 +84,6 @@ h5 {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
-    margin-right: 8px;
     @media #{$small-and-down} {
       font-size: 14px;
       margin-bottom: 32px;
@@ -93,29 +92,53 @@ h5 {
 }
 
 .madein-about-card {
-  margin-top: 0;
+  margin: 0 0 20px 25px;
+  max-width: 280px;
+  
+  @media #{$medium-and-down} {
+    max-width: 220px;
+  }
+  
+  @media #{$small-and-down} {
+    max-width: 100%;
+    margin: 0 0 40px;
+  }
 
   .card-content {
-    .card-title {
-      line-height: 0;
+    margin: 0;
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: color("grey", "darken-3");
+    
+    h2 {
+      font-size: 28px;
+      font-weight: 300;
+      margin: 0 0 2px;
+      line-height: 1.2;
     }
-    p {
-      font-size: 14px;
-      margin-top: 6px;
-      line-height: 1.8;
+  }
+  
+  .card-action {
+    padding: 12px 20px 15px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.6;
+    color: color("grey", "darken-4");
 
-      a {
-        color: color("blue", "darken-1");
+    a {
+      text-transform: none;
+      color: color("grey", "darken-4")!important;
+    }
 
-        .madein-icon {
-          color: color("blue", "darken-2");
-          font-size: 16px;
-          display: inline-block;
-          position: relative;
-          top: 3px;
-          margin-right: 3px;
-        }
-      }
+    .madein-icon {
+      color: color("amber", "darken-3");
+      font-size: 16px;
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      padding-right: 4px;
     }
   }
 }
@@ -123,6 +146,7 @@ h5 {
 // ================== Index pages ==================
 .index-section {
   margin: 32px auto 32px auto;
+  clear: both;
 }
 
 // ================== Post Assets (via Ghost footnotes feature)==================
@@ -280,6 +304,7 @@ h5 {
 }
 
 #footer {
+  clear: both;
   margin-top: 64px;
   box-shadow: none;
   @media #{$medium-and-down} {
@@ -297,7 +322,7 @@ h5 {
       padding-right: 4px;
     }
   }
-  
+
   .footer-copyright {
     font-size: 12px;
   }

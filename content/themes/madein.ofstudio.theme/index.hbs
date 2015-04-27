@@ -5,8 +5,8 @@
       <article>
         {{>about}}
       </article>
+    </div>
   </main>
-  </div>
 {{/is}}
 
 {{#is "index, tag"}}
@@ -15,7 +15,7 @@
 
     <div class="container madein-cards-container">
       {{#is "index"}}
-        <h4>Мои работы</h4>
+        <h1>Мои работы</h1>
       {{/is}}
       {{#is "tag"}}
         <h4>{{tag.name}}</h4>
