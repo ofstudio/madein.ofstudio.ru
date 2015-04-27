@@ -142,9 +142,34 @@ h5 {
     position: relative;
     top: 2px;
     margin-left: 5px;
-    //color: color("grey", "darken-1");
   }
 }
+
+// ================== Aside ==================
+aside {
+  display: none;
+}
+
+#aside-container {
+  margin-top: 50px;
+
+  aside {
+    margin-top: 40px;
+    display: block;
+    color: color("amber", "darken-1");
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 1.8;
+    border-left: 1px solid color("amber", "base");
+    padding-left: 15px;
+
+    @media #{$medium-and-down} {
+      font-weight: 200;
+      font-size: 18px;
+    }
+  }
+}
+
 
 // ================== Post ==================
 .post-container {

@@ -71,7 +71,7 @@
 
 
             // ========== Assets render (via Ghost footnotes feature) ==========
-            var assetsContext = {
+            var context = {
                 assets: []
             };
             $('li.footnote').each(function (index, asset) {
@@ -86,9 +86,21 @@
                         download: ($(link).attr('href').indexOf('://dl.madein.ofstudio.ru') >= 0)
                     });
                 });
-                assetsContext.assets.push(a);
+                context.assets.push(a);
             });
-            $('#post-assets').html(Handlebars.templates['post-assets.hbs'](assetsContext));
+            $('#post-assets').html(Handlebars.templates['post-assets.hbs'](context));
+
+
+            // ========== Aside render ==========
+            context = {
+                aside: []
+            };
+            $('aside').each(function (index, aside) {
+                context.aside.push({
+                    content: $(aside).html()
+                });
+            });
+            $('#aside-container').html(Handlebars.templates['aside.hbs'](context));
 
 
             // ========== Open external links in new window ==========
