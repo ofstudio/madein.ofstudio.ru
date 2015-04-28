@@ -53,10 +53,14 @@
                             queue: false,
                             easing: 'easeInOutQuad'
                         });
+                    $(this.parentNode.parentNode).find('.madein-card-href')
+                        .fadeTo(200, 0);
                 }
             });
 
             $('.madein-card').mouseleave(function () {
+                $(this).find('.madein-card-href')
+                    .fadeTo(200, 1);
                 $(this).find('.card-reveal')
                     .velocity({translateY: 0}, {
                         duration: 225,

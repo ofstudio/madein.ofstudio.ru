@@ -2308,6 +2308,8 @@ aside {
   .madein-card .card-title {
     font-size: 1.125rem;
     font-weight: 400; }
+  .madein-card .card-reveal {
+    background-color: rgba(255, 255, 255, 0.92); }
 
 .madein-pagination {
   margin: 1.25rem 0; }
