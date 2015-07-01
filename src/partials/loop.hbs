@@ -1,5 +1,7 @@
 <div class="row">
   {{#foreach posts}}
-    {{>card}}
+    {{^has tag="unlisted"}}
+      {{>card}}
+    {{/has}}
   {{/foreach}}
 </div>

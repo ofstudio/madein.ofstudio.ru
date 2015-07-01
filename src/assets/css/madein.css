@@ -2260,6 +2260,9 @@ aside {
           max-width: 100%;
           box-shadow: none; } }
 
+.post-tag-unlisted {
+  display: none !important; }
+
 .post-tags {
   margin: 2rem 0 0.5rem; }
   .post-tags a {

@@ -227,6 +227,10 @@ aside {
 }
 
 // ================== Post tags ==================
+.post-tag-unlisted {
+  display: none!important;
+}
+
 .post-tags {
   margin: rem-calc(32px 0 8px);
 
