@@ -8,6 +8,9 @@ require('./helpers')();
 var path = require('path'),
     config;
 
+// Keymetrics.io enable HTTP analysis
+require('pmx').init();
+
 config = {
     // ### Production
     // When running Ghost in the wild, use the production environment
