@@ -19,7 +19,7 @@
   "license": "MIT",
   "homepage": "http://madein.ofstudio.ru",
   "dependencies": {
-    "ghost": "^0.6.3"
+    "ghost": "^0.7.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
