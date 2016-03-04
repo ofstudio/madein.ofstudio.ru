@@ -13,7 +13,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://madein.ofstudio.ru',
+        url: 'https://madein.ofstudio.ru',
         mail: {},
         database: {
             client: 'sqlite3',
