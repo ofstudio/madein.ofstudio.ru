@@ -19,7 +19,8 @@
   "license": "MIT",
   "homepage": "http://madein.ofstudio.ru",
   "dependencies": {
-    "ghost": "^0.11.0"
+    "ghost": "^0.11.0",
+    "pmx": "^0.6.4"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
