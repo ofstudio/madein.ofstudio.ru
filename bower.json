@@ -2,6 +2,6 @@
   "name": "madein.ofstudio.ru",
   "dependencies": {
     "materialize": "~0.96.1",
-    "handlebars": "~3.0.0"
+    "handlebars": "~4.0.0"
   }
 }

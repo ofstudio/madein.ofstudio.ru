@@ -205,14 +205,29 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
@@ -230,7 +245,8 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-[hidden], template {
+[hidden],
+template {
   display: none; }
 
 /* Links
@@ -244,7 +260,8 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0; }
 
 /* Text-level semantics
@@ -258,7 +275,8 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-b, strong {
+b,
+strong {
   font-weight: bold; }
 
 /**
@@ -291,7 +309,8 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -342,7 +361,10 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
@@ -358,7 +380,11 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   /* 1 */
   font: inherit;
@@ -378,7 +404,8 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button, select {
+button,
+select {
   text-transform: none; }
 
 /**
@@ -389,7 +416,10 @@ button, select {
  *    `input` and others.
  */
 /* 1 */
-html input[type="button"], button, input[type="reset"], input[type="submit"] {
+html input[type="button"],
+button,
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -398,13 +428,15 @@ html input[type="button"], button, input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -422,7 +454,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -433,7 +466,8 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
@@ -454,7 +488,8 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -497,7 +532,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-td, th {
+td,
+th {
   padding: 0; }
 
 html {
@@ -592,7 +628,8 @@ i {
   i.large {
     font-size: 6rem; }
 
-img.responsive-img, video.responsive-video {
+img.responsive-img,
+video.responsive-video {
   max-width: 100%;
   height: auto; }
 
@@ -658,15 +695,15 @@ ul.staggered-list li {
 /*********************
   Media Query Classes
 **********************/
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important; } }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .hide-on-med-and-down {
     display: none !important; } }
 
-@media only screen and (min-width : 601px) {
+@media only screen and (min-width: 601px) {
   .hide-on-med-and-up {
     display: none !important; } }
 
@@ -674,11 +711,11 @@ ul.staggered-list li {
   .hide-on-med-only {
     display: none !important; } }
 
-@media only screen and (min-width : 993px) {
+@media only screen and (min-width: 993px) {
   .hide-on-large-only {
     display: none !important; } }
 
-@media only screen and (min-width : 993px) {
+@media only screen and (min-width: 993px) {
   .show-on-large {
     display: initial !important; } }
 
@@ -686,19 +723,19 @@ ul.staggered-list li {
   .show-on-medium {
     display: initial !important; } }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   .show-on-small {
     display: initial !important; } }
 
-@media only screen and (min-width : 601px) {
+@media only screen and (min-width: 601px) {
   .show-on-medium-and-up {
     display: initial !important; } }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .show-on-medium-and-down {
     display: initial !important; } }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   .center-on-small-only {
     text-align: center; } }
 
@@ -724,11 +761,11 @@ table {
   table.striped tbody tr:nth-child(odd) {
     background-color: #f2f2f2; }
   table.hoverable tbody tr {
-    -webkit-transition: background-color .25s ease;
-    -moz-transition: background-color .25s ease;
-    -o-transition: background-color .25s ease;
-    -ms-transition: background-color .25s ease;
-    transition: background-color .25s ease; }
+    -webkit-transition: background-color 0.25s ease;
+    -moz-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
+    -ms-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease; }
     table.hoverable tbody tr:hover {
       background-color: #f2f2f2; }
   table.centered thead tr th, table.centered tbody tr td {
@@ -744,7 +781,7 @@ td, th {
   vertical-align: middle;
   border-radius: 2px; }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   table.responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -752,7 +789,8 @@ td, th {
     display: block;
     position: relative;
     /* sort out borders */ }
-    table.responsive-table th, table.responsive-table td {
+    table.responsive-table th,
+    table.responsive-table td {
       margin: 0;
       vertical-align: top; }
     table.responsive-table th {
@@ -913,11 +951,11 @@ span.badge {
     top: 0;
     bottom: 0;
     background-color: #26a69a;
-    -webkit-transition: width .3s linear;
-    -moz-transition: width .3s linear;
-    -o-transition: width .3s linear;
-    -ms-transition: width .3s linear;
-    transition: width .3s linear; }
+    -webkit-transition: width 0.3s linear;
+    -moz-transition: width 0.3s linear;
+    -o-transition: width 0.3s linear;
+    -ms-transition: width 0.3s linear;
+    transition: width 0.3s linear; }
   .progress .indeterminate {
     background-color: #26a69a; }
     .progress .indeterminate:before {
@@ -956,11 +994,9 @@ span.badge {
   0% {
     left: -35%;
     right: 100%; }
-
   60% {
     left: 100%;
     right: -90%; }
-
   100% {
     left: 100%;
     right: -90%; } }
@@ -969,11 +1005,9 @@ span.badge {
   0% {
     left: -35%;
     right: 100%; }
-
   60% {
     left: 100%;
     right: -90%; }
-
   100% {
     left: 100%;
     right: -90%; } }
@@ -982,11 +1016,9 @@ span.badge {
   0% {
     left: -35%;
     right: 100%; }
-
   60% {
     left: 100%;
     right: -90%; }
-
   100% {
     left: 100%;
     right: -90%; } }
@@ -995,11 +1027,9 @@ span.badge {
   0% {
     left: -200%;
     right: 100%; }
-
   60% {
     left: 107%;
     right: -8%; }
-
   100% {
     left: 107%;
     right: -8%; } }
@@ -1008,11 +1038,9 @@ span.badge {
   0% {
     left: -200%;
     right: 100%; }
-
   60% {
     left: 107%;
     right: -8%; }
-
   100% {
     left: 107%;
     right: -8%; } }
@@ -1021,11 +1049,9 @@ span.badge {
   0% {
     left: -200%;
     right: 100%; }
-
   60% {
     left: 107%;
     right: -8%; }
-
   100% {
     left: 107%;
     right: -8%; } }
@@ -1123,11 +1149,11 @@ span.badge {
   max-width: 1280px;
   width: 90%; }
 
-@media only screen and (min-width : 601px) {
+@media only screen and (min-width: 601px) {
   .container {
     width: 85%; } }
 
-@media only screen and (min-width : 993px) {
+@media only screen and (min-width: 993px) {
   .container {
     width: 70%; } }
 
@@ -1160,185 +1186,185 @@ span.badge {
     box-sizing: border-box;
     padding: 0 0.75rem; }
     .row .col.s1 {
-      width: 8.33333%;
+      width: 8.3333333333%;
       margin-left: 0; }
     .row .col.s2 {
-      width: 16.66667%;
+      width: 16.6666666667%;
       margin-left: 0; }
     .row .col.s3 {
       width: 25%;
       margin-left: 0; }
     .row .col.s4 {
-      width: 33.33333%;
+      width: 33.3333333333%;
       margin-left: 0; }
     .row .col.s5 {
-      width: 41.66667%;
+      width: 41.6666666667%;
       margin-left: 0; }
     .row .col.s6 {
       width: 50%;
       margin-left: 0; }
     .row .col.s7 {
-      width: 58.33333%;
+      width: 58.3333333333%;
       margin-left: 0; }
     .row .col.s8 {
-      width: 66.66667%;
+      width: 66.6666666667%;
       margin-left: 0; }
     .row .col.s9 {
       width: 75%;
       margin-left: 0; }
     .row .col.s10 {
-      width: 83.33333%;
+      width: 83.3333333333%;
       margin-left: 0; }
     .row .col.s11 {
-      width: 91.66667%;
+      width: 91.6666666667%;
       margin-left: 0; }
     .row .col.s12 {
       width: 100%;
       margin-left: 0; }
     .row .col.offset-s1 {
-      margin-left: 8.33333%; }
+      margin-left: 8.3333333333%; }
     .row .col.offset-s2 {
-      margin-left: 16.66667%; }
+      margin-left: 16.6666666667%; }
     .row .col.offset-s3 {
       margin-left: 25%; }
     .row .col.offset-s4 {
-      margin-left: 33.33333%; }
+      margin-left: 33.3333333333%; }
     .row .col.offset-s5 {
-      margin-left: 41.66667%; }
+      margin-left: 41.6666666667%; }
     .row .col.offset-s6 {
       margin-left: 50%; }
     .row .col.offset-s7 {
-      margin-left: 58.33333%; }
+      margin-left: 58.3333333333%; }
     .row .col.offset-s8 {
-      margin-left: 66.66667%; }
+      margin-left: 66.6666666667%; }
     .row .col.offset-s9 {
       margin-left: 75%; }
     .row .col.offset-s10 {
-      margin-left: 83.33333%; }
+      margin-left: 83.3333333333%; }
     .row .col.offset-s11 {
-      margin-left: 91.66667%; }
+      margin-left: 91.6666666667%; }
     .row .col.offset-s12 {
       margin-left: 100%; }
-    @media only screen and (min-width : 601px) {
+    @media only screen and (min-width: 601px) {
       .row .col.m1 {
-        width: 8.33333%;
+        width: 8.3333333333%;
         margin-left: 0; }
       .row .col.m2 {
-        width: 16.66667%;
+        width: 16.6666666667%;
         margin-left: 0; }
       .row .col.m3 {
         width: 25%;
         margin-left: 0; }
       .row .col.m4 {
-        width: 33.33333%;
+        width: 33.3333333333%;
         margin-left: 0; }
       .row .col.m5 {
-        width: 41.66667%;
+        width: 41.6666666667%;
         margin-left: 0; }
       .row .col.m6 {
         width: 50%;
         margin-left: 0; }
       .row .col.m7 {
-        width: 58.33333%;
+        width: 58.3333333333%;
         margin-left: 0; }
       .row .col.m8 {
-        width: 66.66667%;
+        width: 66.6666666667%;
         margin-left: 0; }
       .row .col.m9 {
         width: 75%;
         margin-left: 0; }
       .row .col.m10 {
-        width: 83.33333%;
+        width: 83.3333333333%;
         margin-left: 0; }
       .row .col.m11 {
-        width: 91.66667%;
+        width: 91.6666666667%;
         margin-left: 0; }
       .row .col.m12 {
         width: 100%;
         margin-left: 0; }
       .row .col.offset-m1 {
-        margin-left: 8.33333%; }
+        margin-left: 8.3333333333%; }
       .row .col.offset-m2 {
-        margin-left: 16.66667%; }
+        margin-left: 16.6666666667%; }
       .row .col.offset-m3 {
         margin-left: 25%; }
       .row .col.offset-m4 {
-        margin-left: 33.33333%; }
+        margin-left: 33.3333333333%; }
       .row .col.offset-m5 {
-        margin-left: 41.66667%; }
+        margin-left: 41.6666666667%; }
       .row .col.offset-m6 {
         margin-left: 50%; }
       .row .col.offset-m7 {
-        margin-left: 58.33333%; }
+        margin-left: 58.3333333333%; }
       .row .col.offset-m8 {
-        margin-left: 66.66667%; }
+        margin-left: 66.6666666667%; }
       .row .col.offset-m9 {
         margin-left: 75%; }
       .row .col.offset-m10 {
-        margin-left: 83.33333%; }
+        margin-left: 83.3333333333%; }
       .row .col.offset-m11 {
-        margin-left: 91.66667%; }
+        margin-left: 91.6666666667%; }
       .row .col.offset-m12 {
         margin-left: 100%; } }
-    @media only screen and (min-width : 993px) {
+    @media only screen and (min-width: 993px) {
       .row .col.l1 {
-        width: 8.33333%;
+        width: 8.3333333333%;
         margin-left: 0; }
       .row .col.l2 {
-        width: 16.66667%;
+        width: 16.6666666667%;
         margin-left: 0; }
       .row .col.l3 {
         width: 25%;
         margin-left: 0; }
       .row .col.l4 {
-        width: 33.33333%;
+        width: 33.3333333333%;
         margin-left: 0; }
       .row .col.l5 {
-        width: 41.66667%;
+        width: 41.6666666667%;
         margin-left: 0; }
       .row .col.l6 {
         width: 50%;
         margin-left: 0; }
       .row .col.l7 {
-        width: 58.33333%;
+        width: 58.3333333333%;
         margin-left: 0; }
       .row .col.l8 {
-        width: 66.66667%;
+        width: 66.6666666667%;
         margin-left: 0; }
       .row .col.l9 {
         width: 75%;
         margin-left: 0; }
       .row .col.l10 {
-        width: 83.33333%;
+        width: 83.3333333333%;
         margin-left: 0; }
       .row .col.l11 {
-        width: 91.66667%;
+        width: 91.6666666667%;
         margin-left: 0; }
       .row .col.l12 {
         width: 100%;
         margin-left: 0; }
       .row .col.offset-l1 {
-        margin-left: 8.33333%; }
+        margin-left: 8.3333333333%; }
       .row .col.offset-l2 {
-        margin-left: 16.66667%; }
+        margin-left: 16.6666666667%; }
       .row .col.offset-l3 {
         margin-left: 25%; }
       .row .col.offset-l4 {
-        margin-left: 33.33333%; }
+        margin-left: 33.3333333333%; }
       .row .col.offset-l5 {
-        margin-left: 41.66667%; }
+        margin-left: 41.6666666667%; }
       .row .col.offset-l6 {
         margin-left: 50%; }
       .row .col.offset-l7 {
-        margin-left: 58.33333%; }
+        margin-left: 58.3333333333%; }
       .row .col.offset-l8 {
-        margin-left: 66.66667%; }
+        margin-left: 66.6666666667%; }
       .row .col.offset-l9 {
         margin-left: 75%; }
       .row .col.offset-l10 {
-        margin-left: 83.33333%; }
+        margin-left: 83.3333333333%; }
       .row .col.offset-l11 {
-        margin-left: 91.66667%; }
+        margin-left: 91.6666666667%; }
       .row .col.offset-l12 {
         margin-left: 100%; } }
 
@@ -1356,7 +1382,7 @@ nav {
     nav .nav-wrapper i {
       display: block;
       font-size: 2rem; }
-  @media only screen and (min-width : 993px) {
+  @media only screen and (min-width: 993px) {
     nav a.button-collapse {
       display: none; } }
   nav .button-collapse {
@@ -1381,7 +1407,7 @@ nav {
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
       transform: translateX(-50%); }
-    @media only screen and (max-width : 992px) {
+    @media only screen and (max-width: 992px) {
       nav .brand-logo {
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -1395,11 +1421,11 @@ nav {
   nav ul {
     margin: 0; }
     nav ul li {
-      -webkit-transition: background-color .3s;
-      -moz-transition: background-color .3s;
-      -o-transition: background-color .3s;
-      -ms-transition: background-color .3s;
-      transition: background-color .3s;
+      -webkit-transition: background-color 0.3s;
+      -moz-transition: background-color 0.3s;
+      -o-transition: background-color 0.3s;
+      -ms-transition: background-color 0.3s;
+      transition: background-color 0.3s;
       float: left;
       padding: 0; }
       nav ul li:hover, nav ul li.active {
@@ -1426,11 +1452,11 @@ nav {
       left: 0; }
       nav .input-field label i {
         color: rgba(255, 255, 255, 0.7);
-        -webkit-transition: color .3s;
-        -moz-transition: color .3s;
-        -o-transition: color .3s;
-        -ms-transition: color .3s;
-        transition: color .3s; }
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        -ms-transition: color 0.3s;
+        transition: color 0.3s; }
       nav .input-field label.active i {
         color: #fff; }
       nav .input-field label.active {
@@ -1447,7 +1473,7 @@ nav {
   .navbar-fixed nav {
     position: fixed; }
 
-@media only screen and (min-width : 601px) {
+@media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 64px;
     line-height: 64px; }
@@ -1555,13 +1581,13 @@ small {
       font-size: 1.2rem; } }
   @media only screen and (min-width: 0px) {
     .flow-text {
-      line-height: .8rem; } }
+      line-height: 0.8rem; } }
   @media only screen and (min-width: 390px) {
     .flow-text {
       font-size: 1.224rem; } }
   @media only screen and (min-width: 30px) {
     .flow-text {
-      line-height: .904rem; } }
+      line-height: 0.904rem; } }
   @media only screen and (min-width: 420px) {
     .flow-text {
       font-size: 1.248rem; } }
@@ -1753,11 +1779,11 @@ small {
     .card .card-action a {
       color: #ffab40;
       margin-right: 20px;
-      -webkit-transition: color .3s ease;
-      -moz-transition: color .3s ease;
-      -o-transition: color .3s ease;
-      -ms-transition: color .3s ease;
-      transition: color .3s ease;
+      -webkit-transition: color 0.3s ease;
+      -moz-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      -ms-transition: color 0.3s ease;
+      transition: color 0.3s ease;
       text-transform: uppercase; }
       .card .card-action a:hover {
         color: #ffd8a6; }
@@ -1808,11 +1834,11 @@ small {
   background-color: #26a69a;
   text-align: center;
   letter-spacing: .5px;
-  -webkit-transition: .2s ease-out;
-  -moz-transition: .2s ease-out;
-  -o-transition: .2s ease-out;
-  -ms-transition: .2s ease-out;
-  transition: .2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
     background-color: #2bbbad; }
@@ -1904,11 +1930,11 @@ button.btn-floating {
   vertical-align: middle;
   z-index: 1;
   will-change: opacity, transform;
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  transition: all .3s ease-out; }
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .waves-effect .waves-ripple {
     position: absolute;
     border-radius: 50%;
@@ -1990,11 +2016,11 @@ a.waves-effect .waves-ripple {
 .materialboxed {
   cursor: zoom-in;
   position: relative;
-  -webkit-transition: opacity .4s;
-  -moz-transition: opacity .4s;
-  -o-transition: opacity .4s;
-  -ms-transition: opacity .4s;
-  transition: opacity .4s; }
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  transition: opacity 0.4s; }
   .materialboxed:hover {
     will-change: left, top, width, height; }
     .materialboxed:hover:not(.active) {
@@ -2078,16 +2104,18 @@ a.waves-effect .waves-ripple {
     right: 0;
     left: auto; }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .side-nav.fixed {
     left: -105%; }
     .side-nav.fixed.right-aligned {
       right: -105%;
       left: auto; } }
 
-.side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
+.side-nav .collapsible-body li.active,
+.side-nav.fixed .collapsible-body li.active {
   background-color: #ee6e73; }
-  .side-nav .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
+  .side-nav .collapsible-body li.active a,
+  .side-nav.fixed .collapsible-body li.active a {
     color: #fff; }
 
 #sidenav-overlay {
@@ -2142,7 +2170,7 @@ h5 {
     color: #757575; }
   .madein-nav .container.nav-wrapper {
     padding: 0 1.5rem 0 0; }
-    @media only screen and (max-width : 600px) {
+    @media only screen and (max-width: 600px) {
       .madein-nav .container.nav-wrapper {
         width: 100%; } }
   .madein-nav .madein-brand-logo {
@@ -2162,7 +2190,7 @@ h5 {
   line-height: 1.8;
   font-weight: 300;
   font-size: 1.125rem; }
-  @media only screen and (max-width : 992px) {
+  @media only screen and (max-width: 992px) {
     .about-me p {
       font-weight: 400;
       font-size: 1rem; } }
@@ -2228,14 +2256,14 @@ aside {
     line-height: 1.8;
     border-left: 1px solid #ffc107;
     padding-left: 0.9375rem; }
-    @media only screen and (max-width : 992px) {
+    @media only screen and (max-width: 992px) {
       #aside-container aside {
         font-weight: 200;
         font-size: 1.125rem; } }
 
 .post-container {
   padding: 0; }
-  @media only screen and (max-width : 992px) {
+  @media only screen and (max-width: 992px) {
     .post-container {
       width: 100% !important;
       padding: 0 !important; } }
@@ -2250,11 +2278,11 @@ aside {
       max-width: 95%;
       display: block;
       margin: 0 auto 10px; }
-      @media only screen and (max-width : 992px) {
+      @media only screen and (max-width: 992px) {
         .post-container article strong img {
           margin: 0 0 0.625rem;
           max-width: 100%; } }
-      @media only screen and (max-width : 600px) {
+      @media only screen and (max-width: 600px) {
         .post-container article strong img {
           margin: 0 0 0.3125rem;
           max-width: 100%;
@@ -2328,14 +2356,14 @@ aside {
   -moz-transition: height 1.2s ease;
   -o-transition: height 1.2s ease; }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   #page-bottom-margin {
     margin-top: 3rem; } }
 
 #footer {
   margin-top: 4rem;
   box-shadow: none; }
-  @media only screen and (max-width : 992px) {
+  @media only screen and (max-width: 992px) {
     #footer {
       margin-top: 0; } }
   #footer li {
@@ -2349,10 +2377,10 @@ aside {
   #footer .footer-copyright {
     font-size: 0.75rem; }
 
-@media only screen and (max-width : 740px) {
+@media only screen and (max-width: 740px) {
   .hide-on-med-narrow-and-down {
     display: none !important; } }
 
-@media only screen and (min-width : 741px) {
+@media only screen and (min-width: 741px) {
   .hide-on-med-narrow-and-up {
     display: none !important; } }
