@@ -1,10 +1,9 @@
 [
   {
     "name": "madein",
-    "cwd": "/srv/www/domains/madein.ofstudio.ru",
     "script": "index.js",
     "watch": [
-      "/srv/www/domains/madein.ofstudio.ru/content/themes"
+      "content/themes"
     ],
     "merge_logs": true,
     "env": {
