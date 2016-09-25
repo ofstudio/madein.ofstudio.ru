@@ -5,6 +5,7 @@
 + content/themes
 + content/themes/**
 + config.js
++ service-configuration.json
 + helpers.js
 + index.js
 + package.json

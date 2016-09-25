@@ -1,0 +1,36 @@
+{
+  "production": {
+    "Mailgun": {
+      "auth": {
+        "user": "Mailgun username",
+        "pass": "Mailgun password"
+      }
+    },
+    "mysql": {
+      "connection": {
+        "host": "127.0.0.1",
+        "user": "ofstudio",
+        "password": "{database password}",
+        "database": "madein_ofstudio_ru",
+        "charset": "utf8"
+      }
+    }
+  },
+  "dev": {
+    "Mailgun": {
+      "auth": {
+        "user": "Mailgun username",
+        "pass": "Mailgun password"
+      }
+    },
+    "mysql": {
+      "connection": {
+        "host": "127.0.0.1",
+        "user": "dev",
+        "password": "",
+        "database": "madein_ofstudio_ru_dev",
+        "charset": "utf8"
+      }
+    }
+  }
+}

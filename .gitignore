@@ -1,12 +1,20 @@
-node_modules
-.tmp
-src/assets/bower_components
-.sass-cache
+# Loacal caches, logs and IDE configs
 .idea
-.deploy-access
+.tmp
+.sass-cache
 npm-debug.log
 
-# Content folder structure
+# Service credentials
+# See `.deploy-access-example` and `service-configuration-example.json`
+.deploy-access
+service-configuration.json
+
+# Libraries and auto-generated sources
+node_modules
+src/assets/bower_components
+src/assets/css
+
+# Ghost `content/` folder structure
 content/*/*
 !content/apps/README.MD
 !content/data/README.MD
