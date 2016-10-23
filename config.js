@@ -7,7 +7,11 @@ require('./helpers')();
 
 var path = require('path'),
     serviceConfiguration = require('./service-configuration.json'),
-    config;
+    config, clusterInstanceNum;
+
+// Set clusterInstanceNum if in cluster mode
+clusterInstanceNum = typeof process.env.NODE_APP_INSTANCE === 'string'
+  ? parseInt(process.env.NODE_APP_INSTANCE) : 0;
 
 config = {
     // ### Production
@@ -36,7 +40,7 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '8368'
+            port: (7250 + clusterInstanceNum).toString()
         },
         paths: {
             contentPath: path.join(__dirname, '/content/')
