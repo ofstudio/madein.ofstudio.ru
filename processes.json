@@ -2,7 +2,7 @@
   {
     "name": "madein",
     "script": "index.js",
-    "instances"  : 2,
+    "instances"  : 1,
     "exec_mode"  : "cluster",
     "watch": [
       "content/themes"
