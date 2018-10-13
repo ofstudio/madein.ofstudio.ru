@@ -3,6 +3,11 @@ services:
 
   app:
     restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: 1m
+        max-file: "10"
     volumes:
       - /srv/${COMPOSE_PROJECT_NAME}/app:${CONTENT_PATH}
     networks:
