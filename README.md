@@ -1,18 +1,38 @@
 # madein.ofstudio.ru
 
-_Portfolio website based on [Ghost Platform](https://github.com/TryGhost/Ghost) and [Materialize Framework](http://materializecss.com/index.html)_
+Portfolio website.
 
-# Homepage
+## Install
+```bash
+cd theme
+npm install
+bower install
+grunt bower-install
+cd ../app
+npm install
+```
+## Build Theme and Run
+```bash
+cd theme
+grunt build
+cd ../app
+npm start
+```
 
-__[madein.ofstudio.ru](http://madein.ofstudio.ru)__
+## Docker `.env` File
+```
+MYSQL_HOST=...
+MYSQL_DATABASE=...
+MYSQL_USER=...
+MYSQL_PASSWORD=...
 
-# Project scaffolding
+MAILGUN_USER=...
+MAILGUN_PASS=...
 
-`npm install && bower install`
-
-# Deployment
-
-Rename `.deploy-access-example` to `.deploy-access` and edit variables.
+INSTALL_PATH=/usr/local/src/app
+THEME_PATH=/var/lib/theme
+CONTENT_PATH=/var/lib/content
+```
 
 ## License
 

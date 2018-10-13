@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  app:
+    build:
+      context: ./app
+      args:
+        INSTALL_PATH: ${INSTALL_PATH}
+        THEME_PATH: ${THEME_PATH}
+        CONTENT_PATH: ${CONTENT_PATH}

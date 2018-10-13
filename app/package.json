@@ -1,0 +1,30 @@
+{
+  "name": "madein.ofstudio.ru",
+  "version": "0.1.0",
+  "description": "Oleg Fomin Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ofstudio/madein.ofstudio.ru"
+  },
+  "keywords": [
+    "Ghost",
+    "portfolio"
+  ],
+  "author": {
+    "name": "Oleg Fomin",
+    "email": "ofstudio@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://madein.ofstudio.ru",
+  "engines": {
+    "node": ">=6.14.4 <7.0.0"
+  },
+  "dependencies": {
+    "ghost": "0.11.13"
+  }
+}

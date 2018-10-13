@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  app:
+    restart: always
+    volumes:
+      - /srv/${COMPOSE_PROJECT_NAME}/app:${CONTENT_PATH}
+    networks:
+      - db_local
+    ports:
+      - 127.0.0.1:5575:2368
+    environment:
+      MYSQL_HOST: ${MYSQL_HOST}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MAILGUN_USER: ${MAILGUN_USER}
+      MAILGUN_PASS: ${MAILGUN_PASS}
+
+networks:
+  db_local:
+    external: true

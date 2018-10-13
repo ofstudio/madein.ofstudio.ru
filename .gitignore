@@ -1,23 +1,12 @@
-# Loacal caches, logs and IDE configs
-.idea
-.tmp
-.sass-cache
-npm-debug.log
+**/node_modules
+.data
+.env
 
-# Service credentials
-# See `.deploy-access-example` and `service-configuration-example.json`
-.deploy-access
-service-configuration.json
+theme/src/assets/bower_components
+theme/src/assets/css
 
-# Libraries and auto-generated sources
-node_modules
-src/assets/bower_components
-src/assets/css
-
-# Ghost `content/` folder structure
-content/*/*
-!content/apps/README.MD
-!content/data/README.MD
-!content/images/README.MD
-# Rename your_theme to your theme name
-!content/themes/madein.ofstudio.theme
+app/content/*/*
+!app/content/apps/README.md
+!app/content/data/README.md
+!app/content/images/README.md
+!app/content/themes/README.md

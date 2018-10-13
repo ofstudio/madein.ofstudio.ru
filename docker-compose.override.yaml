@@ -1,0 +1,27 @@
+version: '3'
+services:
+
+  app:
+    depends_on:
+      - mysql
+    restart: unless-stopped
+    volumes:
+      - .data/app:${CONTENT_PATH}
+    ports:
+      - 2368:2368
+    environment:
+      URL: http://localhost:2368/
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: madein
+      MYSQL_USER: madein
+      MYSQL_PASSWORD: madein
+
+  mysql:
+    image: mariadb
+    volumes:
+      - .data/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: madein
+      MYSQL_DATABASE: madein
+      MYSQL_USER: madein
+      MYSQL_PASSWORD: madein

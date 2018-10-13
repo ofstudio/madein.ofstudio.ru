@@ -1,13 +1,31 @@
-#!/bin/sh
-cd "$(dirname "$0")"
+#!/usr/bin/env sh
 
-# Create .deploy-access file
-# Setup your $HOST, $USER, $DIST in .deploy-access: 
-# USER=username
-# HOST=domain.com
-# DIST=/srv/www/domain.com
-# Note: remove .deploy-access from source control!
+DOCKER_MACHINE=roofbeam.scaleway
+export COMPOSE_PROJECT_NAME=madein
 
-source .deploy-access
+echo "Connecting to ${DOCKER_MACHINE}..."
+eval $(docker-machine env ${DOCKER_MACHINE})
+if [[ $? -ne 0 ]] ; then
+    echo "Connection error."
+    eval $(docker-machine env -u)
+    exit 1
+fi
+echo "Connected"
 
-rsync -vaz  --include-from=deploy.lst  --delete -e ssh . $USER@$HOST:$DIST
+if [[ $1 = "up" ]] ; then
+  docker-compose \
+    -f docker-compose.yaml \
+    -f docker-compose.production.yaml \
+    up --build -d
+fi
+
+if [[ $1 = "down" ]] ; then
+  docker-compose \
+    -f docker-compose.yaml \
+    -f docker-compose.production.yaml \
+    down --rmi local
+fi
+
+echo "Disconnecting from ${DOCKER_MACHINE}..."
+eval $(docker-machine env -u)
+echo "Done!"

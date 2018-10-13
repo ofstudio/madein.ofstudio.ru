@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -e
+
+mkdir -p "$CONTENT_PATH/apps"
+mkdir -p "$CONTENT_PATH/images"
+mkdir -p "$CONTENT_PATH/themes"
+
+ln -sf "$THEME_PATH" "$CONTENT_PATH/themes/"
+ln -sf "$INSTALL_PATH/node_modules/ghost/content/themes/casper" "$CONTENT_PATH/themes/"
+
+node index

@@ -1,0 +1,7 @@
+{
+  "name": "madein-theme",
+  "dependencies": {
+    "materialize": "~0.96.1",
+    "handlebars": "~4.0.0"
+  }
+}
