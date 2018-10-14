@@ -11,9 +11,10 @@ services:
     volumes:
       - /srv/${COMPOSE_PROJECT_NAME}/app:${CONTENT_PATH}
     networks:
-      - db_local
-    ports:
-      - 127.0.0.1:5575:2368
+      db_local:
+      web_local:
+        aliases:
+          - madein_web
     environment:
       MYSQL_HOST: ${MYSQL_HOST}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -24,4 +25,6 @@ services:
 
 networks:
   db_local:
+    external: true
+  web_local:
     external: true
